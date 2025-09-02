@@ -12,7 +12,7 @@ import matplotlib.patheffects as path_effects
 plt.rcParams.update({
     "font.family": "serif",
     "font.serif": ["Times New Roman", "DejaVu Serif"],
-    "font.size": 12,
+    "font.size": 14,
     "axes.linewidth": 1.2,
     "axes.spines.top": False,
     "axes.spines.right": False,
@@ -66,13 +66,13 @@ def create_fig1_removal_rates_by_strategy():
                          edgecolor='gray', alpha=0.9))
     
     # Styling
-    ax.set_ylabel('Nitrate Removal Rate (g N m⁻³ d⁻¹)', fontsize=14, fontweight='bold')
-    ax.set_xlabel('Enhancement Strategy', fontsize=14, fontweight='bold')
-    ax.set_title('Nitrate Removal Rates by Enhancement Strategy (Lab vs. Field)', fontsize=16, fontweight='bold', pad=20)
+    ax.set_ylabel('Nitrate Removal Rate (g N m⁻³ d⁻¹)', fontsize=16, fontweight='bold')
+    ax.set_xlabel('Enhancement Strategy', fontsize=16, fontweight='bold')
+    ax.set_title('Nitrate Removal Rates by Enhancement Strategy', fontsize=18, fontweight='bold', pad=20)
     ax.set_xticks(x_pos)
-    ax.set_xticklabels(strategies, rotation=45, ha='right', fontsize=12)
+    ax.set_xticklabels(strategies, rotation=45, ha='right', fontsize=14)
     ax.set_ylim(0, 45)
-    ax.legend()
+    ax.legend(fontsize=12)
     
     # Enhanced grid
     ax.grid(True, alpha=0.3, linestyle='--')
@@ -148,12 +148,12 @@ def create_fig2_rate_vs_efficiency():
         pass
     
     # Styling
-    ax.set_xlabel('Nitrate Removal Rate (g N m⁻³ d⁻¹)', fontsize=14, fontweight='bold')
-    ax.set_ylabel('Removal Efficiency (%)', fontsize=14, fontweight='bold')
-    ax.set_title('Nitrate Removal Rate vs. Efficiency by Experimental Scale', 
-                fontsize=16, fontweight='bold', pad=20)
+    ax.set_xlabel('Nitrate Removal Rate (g N m⁻³ d⁻¹)', fontsize=16, fontweight='bold')
+    ax.set_ylabel('Removal Efficiency (%)', fontsize=16, fontweight='bold')
+    ax.set_title('Nitrate Removal Rate vs. Efficiency by Scale',
+                fontsize=18, fontweight='bold', pad=20)
     # Move legend to bottom left to avoid data overlap
-    ax.legend(fontsize=10, loc='lower right', frameon=True, fancybox=True, shadow=True)
+    ax.legend(fontsize=12, loc='best', frameon=True, fancybox=True, shadow=True)
     ax.grid(True, alpha=0.3, linestyle='--')
     ax.set_xlim(0, 50)
     ax.set_ylim(0, 100)
@@ -204,16 +204,16 @@ def create_fig4_temperature_sensitivity():
                          edgecolor='gray'))
     
     # Enhanced styling
-    ax.set_ylabel('Temperature Sensitivity (Q₁₀)', fontsize=14, fontweight='bold')
-    ax.set_xlabel('Woodchip Condition and Operating Mode', fontsize=14, fontweight='bold')
-    ax.set_title('Temperature Sensitivity of Nitrate Removal Processes', 
-                fontsize=16, fontweight='bold', pad=20)
+    ax.set_ylabel('Temperature Sensitivity (Q₁₀)', fontsize=16, fontweight='bold')
+    ax.set_xlabel('Woodchip Condition and Operating Mode', fontsize=16, fontweight='bold')
+    ax.set_title('Temperature Sensitivity of Nitrate Removal',
+                fontsize=18, fontweight='bold', pad=20)
     ax.set_xticks(x_pos)
-    ax.set_xticklabels(categories, rotation=15, ha='right', fontsize=11)
+    ax.set_xticklabels(categories, rotation=15, ha='right', fontsize=14)
     ax.set_ylim(1.4, 3.4)
     ax.grid(True, alpha=0.3, linestyle='--')
     # Move legend to bottom right
-    ax.legend(fontsize=12, loc='lower right', frameon=True, fancybox=True, shadow=True)
+    ax.legend(fontsize=14, loc='lower right', frameon=True, fancybox=True, shadow=True)
     
     plt.tight_layout()
     plt.savefig('fig4_temperature_scientific.pdf', dpi=300, bbox_inches='tight', facecolor='white')
@@ -262,8 +262,8 @@ def create_fig12_decision_framework():
         ax.add_patch(arrow)
     
     # Title
-    ax.text(7, 15.5, 'Decision Framework for Bioreactor Enhancement Strategy Selection',
-            ha='center', va='center', fontsize=16, fontweight='bold', color='#1F2937')
+    ax.text(7, 15.5, 'Decision Framework for Bioreactor Enhancement',
+            ha='center', va='center', fontsize=18, fontweight='bold', color='#1F2937')
     
     # Level 1: Start (Top)
     start_box = create_modern_box(ax, 5, 14, 4, 0.8, 
@@ -399,9 +399,9 @@ def create_fig6_greenhouse_gas():
                 color='#E63946', markeredgecolor='darkred', markeredgewidth=2,
                 ecolor='darkred', alpha=0.8)
     
-    ax1.set_xlabel('Hydraulic Retention Time (h)', fontsize=13, fontweight='bold')
-    ax1.set_ylabel('N₂O Emissions (% of removed N)', fontsize=13, fontweight='bold')
-    ax1.set_title('Nitrous Oxide Emissions vs. HRT', fontsize=15, fontweight='bold')
+    ax1.set_xlabel('Hydraulic Retention Time (h)', fontsize=15, fontweight='bold')
+    ax1.set_ylabel('N₂O Emissions (% of removed N)', fontsize=15, fontweight='bold')
+    ax1.set_title('N₂O Emissions vs. HRT', fontsize=17, fontweight='bold')
     ax1.grid(True, alpha=0.3, linestyle='--')
     ax1.set_xlim(0, 32)
     ax1.set_ylim(0, 1.4)
@@ -423,9 +423,9 @@ def create_fig6_greenhouse_gas():
                 color='#457B9D', markeredgecolor='darkblue', markeredgewidth=2,
                 ecolor='darkblue', alpha=0.8)
     
-    ax2.set_xlabel('Hydraulic Retention Time (h)', fontsize=13, fontweight='bold')
-    ax2.set_ylabel('CH₄ Emissions (% of removed N)', fontsize=13, fontweight='bold')
-    ax2.set_title('Methane Emissions vs. HRT', fontsize=15, fontweight='bold')
+    ax2.set_xlabel('Hydraulic Retention Time (h)', fontsize=15, fontweight='bold')
+    ax2.set_ylabel('CH₄ Emissions (% of removed N)', fontsize=15, fontweight='bold')
+    ax2.set_title('CH₄ Emissions vs. HRT', fontsize=17, fontweight='bold')
     ax2.grid(True, alpha=0.3, linestyle='--')
     ax2.set_xlim(0, 32)
     ax2.set_ylim(0, 1.1)
@@ -486,14 +486,14 @@ def create_fig7_phosphorus_removal():
                          edgecolor='gray'))
     
     # Enhanced styling
-    ax.set_ylabel('Phosphorus Removal Efficiency (%)', fontsize=14, fontweight='bold')
-    ax.set_xlabel('Bioreactor Media Type', fontsize=14, fontweight='bold')
-    ax.set_title('Phosphorus Removal Performance by Media Type and Operational Phase', 
-                fontsize=16, fontweight='bold', pad=20)
+    ax.set_ylabel('Phosphorus Removal Efficiency (%)', fontsize=16, fontweight='bold')
+    ax.set_xlabel('Bioreactor Media Type', fontsize=16, fontweight='bold')
+    ax.set_title('Phosphorus Removal by Media Type and Phase',
+                fontsize=18, fontweight='bold', pad=20)
     ax.set_xticks(x)
-    ax.set_xticklabels(media_types, fontsize=11)
+    ax.set_xticklabels(media_types, fontsize=12)
     # Move legend to upper left
-    ax.legend(fontsize=12, loc='upper left', frameon=True, fancybox=True, shadow=True)
+    ax.legend(fontsize=14, loc='upper left', frameon=True, fancybox=True, shadow=True)
     ax.grid(True, alpha=0.3, linestyle='--')
     ax.set_ylim(-50, 95)
     
@@ -545,14 +545,14 @@ def create_fig8_doc_leaching():
                    edgecolor='black', linewidth=1, capsize=4, error_kw={'linewidth': 1.5})
     
     # Enhanced styling
-    ax.set_ylabel('DOC Concentration (mg L⁻¹)', fontsize=14, fontweight='bold')
-    ax.set_xlabel('Operational Phase', fontsize=14, fontweight='bold')
-    ax.set_title('Dissolved Organic Carbon Leaching Over Time by Media Type', 
-                fontsize=16, fontweight='bold', pad=20)
+    ax.set_ylabel('DOC Concentration (mg C L⁻¹)', fontsize=16, fontweight='bold')
+    ax.set_xlabel('Operational Phase', fontsize=16, fontweight='bold')
+    ax.set_title('DOC Leaching Over Time by Media Type',
+                fontsize=18, fontweight='bold', pad=20)
     ax.set_xticks(x)
-    ax.set_xticklabels(time_periods, fontsize=12)
+    ax.set_xticklabels(time_periods, fontsize=14)
     # Move legend to top left to avoid data overlap
-    ax.legend(fontsize=11, loc='upper left', frameon=True, fancybox=True, shadow=True)
+    ax.legend(fontsize=12, loc='upper left', frameon=True, fancybox=True, shadow=True)
     ax.grid(True, alpha=0.3, linestyle='--')
     ax.set_ylim(0, 150)
     
@@ -605,14 +605,14 @@ def create_fig3_hydraulic_performance():
     for i, (bar, value) in enumerate(zip(bars, hydraulic_conductivity)):
         height = bar.get_height()
         ax1.text(bar.get_x() + bar.get_width()/2., height + error_bars[i] + 200,
-                f'{value}\nm/day', ha='center', va='bottom', fontweight='bold', fontsize=10,
+                f'{value}', ha='center', va='bottom', fontweight='bold', fontsize=12,
                 bbox=dict(boxstyle='round,pad=0.3', facecolor='white', alpha=0.9))
     
-    ax1.set_ylabel('Hydraulic Conductivity (m d⁻¹)', fontsize=13, fontweight='bold')
-    ax1.set_xlabel('Year and Carbon Dosing Status', fontsize=13, fontweight='bold')
-    ax1.set_title('Impact of Carbon Dosing on Hydraulic Performance', fontsize=14, fontweight='bold')
+    ax1.set_ylabel('Hydraulic Conductivity (m d⁻¹)', fontsize=15, fontweight='bold')
+    ax1.set_xlabel('Year and Carbon Dosing Status', fontsize=15, fontweight='bold')
+    ax1.set_title('Impact of Carbon Dosing on Hydraulic Performance', fontsize=17, fontweight='bold')
     ax1.set_xticks(range(len(years)))
-    ax1.set_xticklabels(years, fontsize=10)
+    ax1.set_xticklabels(years, fontsize=12)
     ax1.grid(True, alpha=0.3, linestyle='--')
     ax1.set_ylim(0, 5500)
     
@@ -631,11 +631,11 @@ def create_fig3_hydraulic_performance():
                     fontweight='bold', fontsize=10,
                     bbox=dict(boxstyle='round,pad=0.3', facecolor='white', alpha=0.9))
     
-    ax2.set_ylabel('Methanol Dosing Rate (mL min⁻¹)', fontsize=13, fontweight='bold')
-    ax2.set_xlabel('Year', fontsize=13, fontweight='bold')
-    ax2.set_title('Carbon Dosing Strategy Over Time', fontsize=14, fontweight='bold')
+    ax2.set_ylabel('Methanol Dosing Rate (mL min⁻¹)', fontsize=15, fontweight='bold')
+    ax2.set_xlabel('Year', fontsize=15, fontweight='bold')
+    ax2.set_title('Carbon Dosing Strategy Over Time', fontsize=17, fontweight='bold')
     ax2.set_xticks(range(len(years)))
-    ax2.set_xticklabels(['2018', '2020', '2021'], fontsize=10)
+    ax2.set_xticklabels(['2018', '2020', '2021'], fontsize=12)
     ax2.grid(True, alpha=0.3, linestyle='--')
     ax2.set_ylim(0, 12)
     
@@ -673,15 +673,15 @@ def create_fig5_cost_analysis():
         for bar, cost in zip(bars, costs):
             height = bar.get_height()
             ax.text(bar.get_x() + bar.get_width()/2., height + 1,
-                    f'${cost}', ha='center', va='bottom', fontweight='bold', fontsize=9)
+                    f'${cost}', ha='center', va='bottom', fontweight='bold', fontsize=11)
     
-    ax.set_ylabel('Unit Cost ($ kg⁻¹ NO₃-N removed)', fontsize=14, fontweight='bold')
-    ax.set_xlabel('Bioreactor Configuration', fontsize=14, fontweight='bold')
-    ax.set_title('Economic Analysis of Different Bioreactor Configurations', 
-                fontsize=16, fontweight='bold', pad=20)
+    ax.set_ylabel('Unit Cost ($ kg⁻¹ NO₃-N removed)', fontsize=16, fontweight='bold')
+    ax.set_xlabel('Bioreactor Configuration', fontsize=16, fontweight='bold')
+    ax.set_title('Cost Analysis of Bioreactor Configurations',
+                fontsize=18, fontweight='bold', pad=20)
     ax.set_xticks(x)
-    ax.set_xticklabels(bioreactor_types, fontsize=11)
-    ax.legend(fontsize=12, loc='upper left', frameon=True, fancybox=True, shadow=True)
+    ax.set_xticklabels(bioreactor_types, fontsize=12)
+    ax.legend(fontsize=14, loc='upper left', frameon=True, fancybox=True, shadow=True)
     ax.grid(True, alpha=0.3, linestyle='--')
     ax.set_ylim(0, 40)
     
@@ -726,8 +726,8 @@ def create_fig9_wood_species_comparison():
         ax1.text(bar.get_x() + bar.get_width()/2., height + 0.5,
                 f'{value:.1f}', ha='center', va='bottom', fontweight='bold', fontsize=10)
     
-    ax1.set_ylabel('Nitrate Removal Rate\n(g N m⁻³ d⁻¹)', fontsize=12, fontweight='bold')
-    ax1.set_title('Nitrate Removal\nPerformance', fontsize=13, fontweight='bold')
+    ax1.set_ylabel('Nitrate Removal Rate\n(g N m⁻³ d⁻¹)', fontsize=14, fontweight='bold')
+    ax1.set_title('Nitrate Removal Performance', fontsize=15, fontweight='bold')
     ax1.grid(True, alpha=0.3, linestyle='--')
     ax1.set_ylim(0, 18)
     
@@ -739,10 +739,10 @@ def create_fig9_wood_species_comparison():
     for bar, value in zip(bars2, n2o_production):
         height = bar.get_height()
         ax2.text(bar.get_x() + bar.get_width()/2., height + 0.05,
-                f'{value:.1f}', ha='center', va='bottom', fontweight='bold', fontsize=10)
+                f'{value:.1f}', ha='center', va='bottom', fontweight='bold', fontsize=12)
     
-    ax2.set_ylabel('N₂O Production\n(Relative to Commercial)', fontsize=12, fontweight='bold')
-    ax2.set_title('Greenhouse Gas\nEmissions', fontsize=13, fontweight='bold')
+    ax2.set_ylabel('N₂O Production\n(Relative to Commercial)', fontsize=14, fontweight='bold')
+    ax2.set_title('Greenhouse Gas Emissions', fontsize=15, fontweight='bold')
     ax2.grid(True, alpha=0.3, linestyle='--')
     ax2.set_ylim(0, 1.5)
     ax2.axhline(y=1.0, color='red', linestyle='--', alpha=0.7, label='Commercial baseline')
@@ -757,14 +757,14 @@ def create_fig9_wood_species_comparison():
         ax3.text(bar.get_x() + bar.get_width()/2., height + 0.1,
                 f'{value:.1f}', ha='center', va='bottom', fontweight='bold', fontsize=10)
     
-    ax3.set_ylabel('Dissolved P Leaching\n(mg L⁻¹)', fontsize=12, fontweight='bold')
-    ax3.set_title('Phosphorus\nLeaching', fontsize=13, fontweight='bold')
+    ax3.set_ylabel('Dissolved P Leaching\n(mg L⁻¹)', fontsize=14, fontweight='bold')
+    ax3.set_title('Phosphorus Leaching', fontsize=15, fontweight='bold')
     ax3.grid(True, alpha=0.3, linestyle='--')
     ax3.set_ylim(0, 4)
     
     # Rotate x-axis labels for better readability
     for ax in [ax1, ax2, ax3]:
-        ax.set_xticklabels(species, rotation=45, ha='right', fontsize=10)
+        ax.set_xticklabels(species, rotation=45, ha='right', fontsize=12)
     
     plt.tight_layout()
     plt.savefig('fig9_wood_species_comparison_scientific.pdf', dpi=300, bbox_inches='tight', facecolor='white')
@@ -798,10 +798,10 @@ def create_fig10_temperature_modeling():
                 capsize=5, capthick=2, linewidth=2, label='Experimental data',
                 markeredgecolor='darkred', markeredgewidth=2)
     
-    ax1.set_xlabel('Temperature (°C)', fontsize=13, fontweight='bold')
-    ax1.set_ylabel('Nitrate Removal Rate (g N m⁻³ d⁻¹)', fontsize=13, fontweight='bold')
-    ax1.set_title('Temperature Dependence of Nitrate Removal', fontsize=14, fontweight='bold')
-    ax1.legend(fontsize=11, loc='upper left', frameon=True, fancybox=True, shadow=True)
+    ax1.set_xlabel('Temperature (°C)', fontsize=15, fontweight='bold')
+    ax1.set_ylabel('Nitrate Removal Rate (g N m⁻³ d⁻¹)', fontsize=15, fontweight='bold')
+    ax1.set_title('Temperature Dependence of Nitrate Removal', fontsize=17, fontweight='bold')
+    ax1.legend(fontsize=12, loc='upper left', frameon=True, fancybox=True, shadow=True)
     ax1.grid(True, alpha=0.3, linestyle='--')
     ax1.set_xlim(0, 32)
     ax1.set_ylim(0, 15)
@@ -816,10 +816,10 @@ def create_fig10_temperature_modeling():
     ax2.scatter([4, 12, 20, 30], [8.2, 12.8, 15.0, 22.1], s=80, c='orange', 
                marker='s', edgecolors='darkorange', linewidth=2, label='Experimental DOC data')
     
-    ax2.set_xlabel('Temperature (°C)', fontsize=13, fontweight='bold')
-    ax2.set_ylabel('DOC Production (mg L⁻¹)', fontsize=13, fontweight='bold')
-    ax2.set_title('Temperature Dependence of DOC Production', fontsize=14, fontweight='bold')
-    ax2.legend(fontsize=11, loc='upper left', frameon=True, fancybox=True, shadow=True)
+    ax2.set_xlabel('Temperature (°C)', fontsize=15, fontweight='bold')
+    ax2.set_ylabel('DOC Production (mg L⁻¹)', fontsize=15, fontweight='bold')
+    ax2.set_title('Temperature Dependence of DOC Production', fontsize=17, fontweight='bold')
+    ax2.legend(fontsize=12, loc='upper left', frameon=True, fancybox=True, shadow=True)
     ax2.grid(True, alpha=0.3, linestyle='--')
     ax2.set_xlim(0, 32)
     ax2.set_ylim(0, 25)
