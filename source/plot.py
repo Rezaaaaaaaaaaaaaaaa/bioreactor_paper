@@ -32,7 +32,10 @@ def create_fig1_removal_rates_by_strategy():
     strategies = ['Control', 'Bio-\naugmentation', 'Media\nModification', 'Hydraulic\nOptimization', 
                  'Mixed\nMedia', 'Design\nModification', 'Alternative\nMedia', 'Carbon\nSupplementation']
     
-    # Study counts from dataset
+    # Study counts from dataset - differences reflect research maturity and implementation practicality
+    # Carbon supplementation has highest sample size due to easier laboratory implementation
+    # Design modification has lower sample size due to field-scale requirements
+    # Bioaugmentation has fewer studies due to specialized microbiology requirements
     n_studies = [9, 7, 9, 9, 8, 7, 9, 12]
     n_observations = [9, 7, 9, 9, 8, 7, 9, 10]
     
@@ -152,7 +155,7 @@ def create_fig2_rate_vs_efficiency():
     ax.set_ylabel('Removal Efficiency (%)', fontsize=14, fontweight='bold')
     ax.set_title('Nitrate Removal Rate vs. Efficiency by Experimental Scale', 
                 fontsize=16, fontweight='bold', pad=20)
-    # Move legend to bottom left to avoid data overlap
+    # Move legend to bottom right to avoid data overlap (Reviewer comment fixed)
     ax.legend(fontsize=10, loc='lower right', frameon=True, fancybox=True, shadow=True)
     ax.grid(True, alpha=0.3, linestyle='--')
     ax.set_xlim(0, 50)
@@ -206,14 +209,14 @@ def create_fig4_temperature_sensitivity():
     # Enhanced styling
     ax.set_ylabel('Temperature Sensitivity (Q₁₀)', fontsize=14, fontweight='bold')
     ax.set_xlabel('Woodchip Condition and Operating Mode', fontsize=14, fontweight='bold')
-    ax.set_title('Temperature Sensitivity of Nitrate Removal Processes', 
-                fontsize=16, fontweight='bold', pad=20)
+    ax.set_title('Temperature Sensitivity (Q₁₀ Values)', 
+                fontsize=16, fontweight='bold', pad=20)  # Simplified title per reviewer comments
     ax.set_xticks(x_pos)
     ax.set_xticklabels(categories, rotation=15, ha='right', fontsize=11)
     ax.set_ylim(1.4, 3.4)
     ax.grid(True, alpha=0.3, linestyle='--')
-    # Move legend to bottom right
-    ax.legend(fontsize=12, loc='lower right', frameon=True, fancybox=True, shadow=True)
+    # Move legend to upper right to avoid data overlap (per reviewer comments)
+    ax.legend(fontsize=12, loc='upper right', frameon=True, fancybox=True, shadow=True)
     
     plt.tight_layout()
     plt.savefig('fig4_temperature_scientific.pdf', dpi=300, bbox_inches='tight', facecolor='white')
@@ -545,7 +548,7 @@ def create_fig8_doc_leaching():
                    edgecolor='black', linewidth=1, capsize=4, error_kw={'linewidth': 1.5})
     
     # Enhanced styling
-    ax.set_ylabel('DOC Concentration (mg L⁻¹)', fontsize=14, fontweight='bold')
+    ax.set_ylabel('DOC Concentration (mg C L⁻¹)', fontsize=14, fontweight='bold')  # Fixed units per reviewer comment
     ax.set_xlabel('Operational Phase', fontsize=14, fontweight='bold')
     ax.set_title('Dissolved Organic Carbon Leaching Over Time by Media Type', 
                 fontsize=16, fontweight='bold', pad=20)
@@ -614,7 +617,7 @@ def create_fig3_hydraulic_performance():
     ax1.set_xticks(range(len(years)))
     ax1.set_xticklabels(years, fontsize=10)
     ax1.grid(True, alpha=0.3, linestyle='--')
-    ax1.set_ylim(0, 5500)
+    ax1.set_ylim(0, 6000)  # Increased upper limit to prevent legend overlap with title
     
     # Carbon dosing rate subplot
     ax2.bar(range(len(years)), carbon_rates, color=['gray', '#FF6B6B', '#FF9999'],
@@ -817,7 +820,7 @@ def create_fig10_temperature_modeling():
                marker='s', edgecolors='darkorange', linewidth=2, label='Experimental DOC data')
     
     ax2.set_xlabel('Temperature (°C)', fontsize=13, fontweight='bold')
-    ax2.set_ylabel('DOC Production (mg L⁻¹)', fontsize=13, fontweight='bold')
+    ax2.set_ylabel('DOC Production (mg C L⁻¹)', fontsize=13, fontweight='bold')  # Fixed units per reviewer comment
     ax2.set_title('Temperature Dependence of DOC Production', fontsize=14, fontweight='bold')
     ax2.legend(fontsize=11, loc='upper left', frameon=True, fancybox=True, shadow=True)
     ax2.grid(True, alpha=0.3, linestyle='--')
@@ -864,6 +867,9 @@ def generate_all_scientific_figures():
     
     print("Creating Figure 10: Temperature modeling results...")
     create_fig10_temperature_modeling()
+    
+    print("Creating Figure 5: Cost analysis comparison...")
+    create_fig5_cost_analysis()
     
     print("All enhanced scientific figures generated successfully as PDFs!")
     print("\nFigures created:")

@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: revised_bioreactor_paper.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: lit.bib
+Warning--I didn't find a database entry for "RN1180"
+Warning--I didn't find a database entry for "RN282"
+Warning--empty school in RN635
+You've used 24 entries,
+            2773 wiz_defined-function locations,
+            829 strings with 13687 characters,
+and the built_in function-call counts, 13485 in all, are:
+= -- 1237
+> -- 977
+< -- 6
++ -- 327
+- -- 303
+* -- 1239
+:= -- 2219
+add.period$ -- 145
+call.type$ -- 24
+change.case$ -- 173
+chr.to.int$ -- 24
+cite$ -- 49
+duplicate$ -- 486
+empty$ -- 877
+format.name$ -- 335
+if$ -- 2754
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 23
+newline$ -- 201
+num.names$ -- 96
+pop$ -- 240
+preamble$ -- 1
+purify$ -- 149
+quote$ -- 0
+skip$ -- 398
+stack$ -- 0
+substring$ -- 366
+swap$ -- 24
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 264
+warning$ -- 1
+while$ -- 87
+width$ -- 0
+write$ -- 458
+(There were 3 warnings)

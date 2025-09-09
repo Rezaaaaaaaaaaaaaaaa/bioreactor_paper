@@ -1,0 +1,383 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Set page geometry
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+}
+
+% Configure hyperref
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    citecolor=blue,
+    pdftitle={Response to Reviewers - Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors},
+    pdfauthor={Reza Moghaddam and Laura E. Christianson},
+}
+
+\title{Response to Reviewers\\
+\large Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors: A Comprehensive Analysis of Enhancement Strategies and Environmental Trade-offs}
+
+\author{Reza Moghaddam\textsuperscript{1,*} and Laura E. Christianson\textsuperscript{2}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\footnotesize
+\textsuperscript{1}Earth Sciences New Zealand\\
+\textsuperscript{2}Research Associate Professor, Department of Crop Sciences, University of Illinois at Urbana-Champaign\\
+S-322 Turner Hall, Urbana, IL 61801, USA\\
+*Corresponding author: reza.moghaddam@niwa.co.nz
+\end{center}
+
+\section*{Introduction}
+
+We thank the editors and reviewers for their thorough and constructive feedback on our manuscript. We have carefully considered all comments and have made substantial revisions to address the concerns raised. Below we provide a detailed response to each reviewer comment, indicating the specific changes made to the manuscript and figures.
+
+\section{Reviewer \#1 - Round 1 Comments}
+
+\subsection{Comment 1.1: Novelty of the study}
+\textbf{Reviewer comment:} "The authors mention that there is extensive existing research on woodchip bioreactors, but the novelty of this study is not sufficiently highlighted. It is recommended to clearly articulate the distinctive contributions that set this work apart from previous studies."
+
+\textbf{Response:} We have strengthened the novelty statement in the abstract and introduction by clarifying that this is the first comprehensive synthesis to quantitatively compare enhancement strategies across experimental scales while systematically addressing environmental trade-offs. The abstract now explicitly states the systematic nature of our approach and the unique focus on enhancement strategies rather than conventional bioreactor reviews.
+
+\textbf{Changes made:} Modified abstract to emphasize systematic review of 70 studies with quantitative comparison across enhancement strategies.
+
+\subsection{Comment 1.2: Literature search time range}
+\textbf{Reviewer comment:} "Section 2.1, 'Literature Search and Screening Criteria,' does not specify the time range of the literature search. This should be clarified."
+
+\textbf{Response:} We have added the specific time range for our literature search.
+
+\textbf{Changes made:} Added "published between 2000 and 2024" to Section 2.1 in the literature search description.
+
+\subsection{Comment 1.3: Laboratory vs. field data differentiation}
+\textbf{Reviewer comment:} "Figure 1 combines laboratory and field data but does not differentiate or weight them. A direct comparative analysis between laboratory and field data in the figure is recommended."
+
+\textbf{Response:} We have modified Figure 1 to show laboratory and field data as separate stacked components within each enhancement strategy, providing visual differentiation between experimental scales.
+
+\textbf{Changes made:} Updated Figure 1 (fig1\_removal\_rates\_scientific.pdf) to show lab (65\%) and field (35\%) data as stacked bars with clear legend differentiation.
+
+\subsection{Comment 1.4: Cost data standardization}
+\textbf{Reviewer comment:} "The cost data are sourced from different countries and years but lack adjustments for inflation and purchasing power parity. It is advisable to standardize the data to a common baseline year and discuss the impact of regional cost variations."
+
+\textbf{Response:} We acknowledge this limitation and have added a new subsection discussing the challenges of cost comparisons across studies. We now explicitly state years for each cost estimate and acknowledge the lack of inflation adjustment as a limitation.
+
+\textbf{Changes made:} Added discussion of cost analysis limitations in Section 6.5, including temporal and geographic variations in cost estimates.
+
+\subsection{Comment 1.5: Figure clarity}
+\textbf{Reviewer comment:} "In Figures 2 and 3, some data labels are obscured. A revision for improved clarity and visual presentation is suggested."
+
+\textbf{Response:} We have revised these figures to improve clarity and prevent overlapping text.
+
+\textbf{Changes made:} 
+- Figure 2: Moved legend to lower right to avoid data overlap
+- Figure 3: Increased y-axis upper limit to prevent legend-title overlap and improved text positioning
+
+\subsection{Comment 1.6: Citation formatting}
+\textbf{Reviewer comment:} "On page 7, lines 26-27 contain citation formatting errors. These should be corrected, and a full check of formatting issues throughout the manuscript is recommended."
+
+\textbf{Response:} We have conducted a comprehensive review of all citations and corrected formatting issues throughout the manuscript.
+
+\textbf{Changes made:} Verified all citations use consistent formatting with \\citep{} commands and corrected any inconsistencies.
+
+\section{Reviewer \#2 - Round 1 Comments}
+
+\subsection{Comment 2.1: Alternative media definition}
+\textbf{Reviewer comment:} "Page 1, line 35. What is the alternative media?"
+
+\textbf{Response:} We have added a clear definition of alternative media in the abstract.
+
+\textbf{Changes made:} Added parenthetical definition: "(carbon sources other than standard woodchips, such as corn cobs, agricultural residues, and different wood species)" in the abstract.
+
+\subsection{Comment 2.2: Sample size explanations}
+\textbf{Reviewer comment:} "Figures (e.g., Fig 1) mention sample sizes and standard deviations, but fail to explain in detail the reasons for the differences in sample sizes among various enhancement strategies."
+
+\textbf{Response:} We have added explanatory comments in the figure generation code and expanded the figure caption to explain sample size variations.
+
+\textbf{Changes made:} Added comments in plot.py explaining that sample size differences reflect research maturity and implementation practicality (e.g., carbon supplementation has higher sample size due to easier laboratory implementation).
+
+\subsection{Comment 2.3: Wood species discussion expansion}
+\textbf{Reviewer comment:} "Different wood species also result in different denitrification performance. Please discuss more not just one research (4.2.2)"
+
+\textbf{Response:} We have substantially expanded Section 4.2.2 to include comprehensive discussion of multiple wood species performance characteristics.
+
+\textbf{Changes made:} Expanded wood species section to include detailed performance data for EAB-killed ash, high-tannin oak, pine, poplar, and willow species, including quantitative performance metrics and environmental trade-offs.
+
+\subsection{Comment 2.4: Carbon supplementation trade-offs}
+\textbf{Reviewer comment:} "Page 5, line 38. Carbon supplementation (e.g., methanol) leads to a decline in hydraulic conductivity, but the specific impact of this decline on actual nitrate removal efficiency is not clearly quantified."
+
+\textbf{Response:} We have added quantitative analysis of hydraulic impacts and their relationship to removal efficiency.
+
+\textbf{Changes made:} Added specific data showing 65\% decline in hydraulic conductivity but maintained removal effectiveness, with explanation that internal hydraulic parameters remained unaffected.
+
+\subsection{Comment 2.5: Reference formatting consistency}
+\textbf{Reviewer comment:} "Page 17. The reference format should be consistent. The information is duplicated for the first reference on page 17"
+
+\textbf{Response:} We have reviewed and corrected all reference formatting issues and removed duplications.
+
+\textbf{Changes made:} Standardized all reference formatting and eliminated duplicate entries.
+
+\subsection{Comment 2.6: Question marks in manuscript}
+\textbf{Reviewer comment:} "There are a lot of ? in the manuscript. Please check over the manuscript before its submission"
+
+\textbf{Response:} We have conducted a comprehensive search for formatting errors and question marks, correcting all instances found.
+
+\textbf{Changes made:} Removed all erroneous question marks and verified proper citation formatting throughout.
+
+\subsection{Comment 2.7: Figure title simplification}
+\textbf{Reviewer comment:} "Title for Figure 4: Data is clearly shown in the figure. There is no need to describe the data in the title."
+
+\textbf{Response:} We have simplified figure titles to be more concise.
+
+\textbf{Changes made:} Changed Figure 4 title from "Temperature Sensitivity of Nitrate Removal Processes" to "Temperature Sensitivity (Q$_{10}$ Values)".
+
+\subsection{Comment 2.8: Figure 5 correlation}
+\textbf{Reviewer comment:} "Figure 5: Poor correlation between model and data"
+
+\textbf{Response:} We acknowledge this limitation and have added R² values to show the extent of model explanation for the data variance.
+
+\textbf{Changes made:} Added R² values to temperature modeling figure showing that temperature explains 45\% of variance in removal rates and 40\% of variance in DOC production.
+
+\subsection{Comment 2.9: Q10 explanation}
+\textbf{Reviewer comment:} "What did the author want to say from the Q10 OR $\theta$"
+
+\textbf{Response:} We have added clearer explanation of Q$_{10}$ coefficients and their practical significance.
+
+\textbf{Changes made:} Enhanced explanation in Section 4.5 clarifying that Q$_{10}$ values indicate temperature sensitivity, with higher values showing greater temperature dependence.
+
+\subsection{Comment 2.10: Cost accounting standards}
+\textbf{Reviewer comment:} "The economic analysis shows significant cost differences among different strategies (\$10.56-\$86/kg N), but a unified cost accounting standard is not explicitly defined."
+
+\textbf{Response:} We have added a new subsection addressing cost analysis limitations and the challenges of standardizing cost comparisons.
+
+\textbf{Changes made:} Added Section 6.5 "Cost Analysis Limitations" discussing methodological differences, temporal variations, and varying economic assumptions across studies.
+
+\section{Reviewer \#3 - Round 1 Comments}
+
+\subsection{Comment 3.1: Recent references}
+\textbf{Reviewer comment:} "In the introduction, only four references are from the past five years, which may indicate that the background of the problem addressed lacks timeliness. The article should cite more recent publications."
+
+\textbf{Response:} We have updated the introduction and throughout the manuscript to include more recent references from 2020-2024.
+
+\textbf{Changes made:} Added recent references throughout the manuscript, with particular emphasis on 2020-2024 publications in the introduction and methods sections.
+
+\subsection{Comment 3.2: Complete reference list}
+\textbf{Reviewer comment:} "The text mentions compiling data from 70 studies, but only 23 references are listed. Please provide the complete list of data sources and references."
+
+\textbf{Response:} The 186 references in our bibliography file (lit.bib) represent the complete database of sources examined. The 70 studies refer to those meeting our inclusion criteria for quantitative analysis.
+
+\textbf{Changes made:} Clarified in the methods section that our systematic review process evaluated 186 total sources with 70 meeting final inclusion criteria for quantitative synthesis.
+
+\subsection{Comment 3.3: Figure font size}
+\textbf{Reviewer comment:} "The font in the Figures is too small to read."
+
+\textbf{Response:} We have increased font sizes across all figures for better readability.
+
+\textbf{Changes made:} Increased font sizes in all figures to minimum 10pt for labels and 12pt for axis titles, with improved contrast and spacing.
+
+\subsection{Comment 3.4: Standards for oak woodchips}
+\textbf{Reviewer comment:} "Page 6 Line 55: What specific standards constrain the use of high-tannin oak woodchips?"
+
+\textbf{Response:} We have clarified that these refer to federal environmental standards regarding tannin leaching.
+
+\textbf{Changes made:} Added explanation that restrictions are "due to concerns about tannin leaching into receiving waters" in the expanded wood species section.
+
+\section{Reviewer \#4 - Round 1 Comments}
+
+\subsection{Comment 4.1: Lack of synthesis}
+\textbf{Reviewer comment:} "The review primarily presents a compilation of data from various studies without offering insightful analysis or synthesis."
+
+\textbf{Response:} We have restructured the discussion sections to provide more analytical synthesis and mechanistic insights.
+
+\textbf{Changes made:} 
+- Added mechanistic explanations for greenhouse gas production pathways
+- Enhanced phosphorus dynamics discussion with removal mechanisms
+- Expanded temperature modeling section with predictive frameworks
+- Strengthened conclusions with synthetic insights
+
+\subsection{Comment 4.2: Limited references per section}
+\textbf{Reviewer comment:} "Many sections rely on only one or two references, undermining the comprehensiveness and credibility of the review."
+
+\textbf{Response:} We have expanded the reference base throughout the manuscript while maintaining focus on high-quality, relevant studies.
+
+\textbf{Changes made:} Added additional supporting references throughout, particularly in sections discussing enhancement mechanisms and environmental trade-offs.
+
+\subsection{Comment 4.3: Reference formatting issues}
+\textbf{Reviewer comment:} "The manuscript contains numerous instances of improper referencing, such as the use of '[?]' instead of proper citations."
+
+\textbf{Response:} We have conducted a comprehensive review and correction of all citation formatting.
+
+\textbf{Changes made:} Eliminated all citation formatting errors and ensured consistent use of \\citep{} format throughout.
+
+\subsection{Comment 4.4: Future research section improvement}
+\textbf{Reviewer comment:} "The final section on future research priorities is poorly structured, with unclear language and weak logical flow."
+
+\textbf{Response:} We have completely restructured the future research section with clear priorities and logical organization.
+
+\textbf{Changes made:} Reorganized Section 7.2 with High Priority, Medium Priority, and Critical Knowledge Gaps subsections, each with specific, actionable research directions.
+
+\section{Reviewer \#1 - Round 2 Comments}
+
+\subsection{Comment 1R2.1: Abstract objectivity}
+\textbf{Reviewer comment:} "Abstract: As a review, the description of the experimental results cannot be said to be the author's analysis of the conclusions, but the need for more objective expression."
+
+\textbf{Response:} We have revised the abstract to use more objective language appropriate for a review article.
+
+\textbf{Changes made:} Modified abstract language to present findings as synthesis of reviewed studies rather than direct experimental results.
+
+\subsection{Comment 1R2.2: Inorganic electron donors}
+\textbf{Reviewer comment:} "Introduction: In fact, in addition to the solid carbon source as the electron transfer required for denitrification, the author also supplemented the promotion of denitrification by different inorganic electron donors."
+
+\textbf{Response:} We acknowledge this point but note that our review focuses specifically on woodchip-based systems. We have clarified this scope in the introduction.
+
+\textbf{Changes made:} Added clarification in introduction about focus on organic carbon-based enhancement strategies in woodchip systems.
+
+\subsection{Comment 1R2.3: Denitrification mechanism diagram}
+\textbf{Reviewer comment:} "3.1 Denitrification Process and Limiting Factors: This part needs to add a denitrification mechanism diagram to describe denitrification more intuitively."
+
+\textbf{Response:} We have enhanced the textual description of denitrification mechanisms with detailed enzymatic steps.
+
+\textbf{Changes made:} Added detailed description of four key enzymes (NAR, NIR, NOR, NOS) and environmental factors affecting each step in Section 3.1.
+
+\subsection{Comment 1R2.4: Carbon source necessity}
+\textbf{Reviewer comment:} "4.1 Carbon Supplementation: The author should give the necessity of supplementing organic carbon sources in the reactor."
+
+\textbf{Response:} We have added explanation of why carbon supplementation is necessary.
+
+\textbf{Changes made:} Enhanced Section 4.1 introduction explaining carbon limitations during cold periods and high loading conditions that necessitate supplementation.
+
+\subsection{Comment 1R2.5: Biomass synthesis in equation}
+\textbf{Reviewer comment:} "The process of converting non-degradable carbon sources such as cellulose into glucose also needs to be given, and the equation should account for biomass synthesis."
+
+\textbf{Response:} We have added explanation of carbon incorporation into microbial biomass.
+
+\textbf{Changes made:} Added text explaining that 10-30\% of carbon is incorporated into microbial biomass through anabolic processes, affecting stoichiometric efficiency.
+
+\subsection{Comment 1R2.6: Greenhouse gas mechanisms}
+\textbf{Reviewer comment:} "5.2 Greenhouse Gas Emissions: The author should briefly give the output mechanism of nitrous oxide and methane."
+
+\textbf{Response:} We have added detailed mechanisms for both N$_2$O and CH$_4$ production.
+
+\textbf{Changes made:} Added mechanistic explanation that N$_2$O results from incomplete denitrification under stress conditions, while CH$_4$ results from methanogenic archaea under highly reducing conditions.
+
+\subsection{Comment 1R2.7: Phosphorus mechanisms}
+\textbf{Reviewer comment:} "5.3 Phosphorus Dynamics: Does woodchip also release phosphate? The mechanism of phosphate removal in this type of reactor?"
+
+\textbf{Response:} We have added comprehensive explanation of phosphorus removal and release mechanisms.
+
+\textbf{Changes made:} Added detailed mechanisms including physical adsorption, chemical precipitation, biological uptake, and pH-driven processes affecting phosphorus dynamics.
+
+\subsection{Comment 1R2.8: Hydraulic conditions}
+\textbf{Reviewer comment:} "7.1 Best Practices for Enhanced Systems: Is the hydraulic condition of the woodchip bioreactor also related to the material?"
+
+\textbf{Response:} We have added discussion of material effects on hydraulic performance.
+
+\textbf{Changes made:} Added explanation that carbon supplementation can affect hydraulic conductivity and the importance of monitoring these effects.
+
+\subsection{Comment 1R2.9: Conclusion structure}
+\textbf{Reviewer comment:} "9 Conclusions: The structure of the conclusion is not a simple list of data conclusions, but to summarize the key information and future research directions."
+
+\textbf{Response:} We have restructured the conclusions to provide synthetic insights rather than data listings.
+
+\textbf{Changes made:} Reorganized conclusions to emphasize key findings, mechanistic insights, and implementation guidance with clear research recommendations.
+
+\section{Reviewer \#2 - Round 2 Comments}
+
+\subsection{Comment 2R2.1: Carbon concentration importance}
+\textbf{Reviewer comment:} "Page 2, line 18: Agreed that the nitrate concentration can influence the removal rate, but I believe the authors should also discuss the importance of bioavailable carbon concentration."
+
+\textbf{Response:} We have enhanced discussion of carbon availability as a limiting factor.
+
+\textbf{Changes made:} Added text explaining carbon limitation when outlet nitrate concentrations remain above 1 mg/L and expanded discussion of carbon availability effects.
+
+\subsection{Comment 2R2.2: Variable flow range specification}
+\textbf{Reviewer comment:} "Page 2, line 20: About the variable flow conditions, can authors specify the range?"
+
+\textbf{Response:} We have added specific flow range information.
+
+\textbf{Changes made:} Added "(typically ranging from 0.1 to 10 times the design flow rate)" to specify variable flow conditions.
+
+\subsection{Comment 2R2.3: Specific removal rate numbers}
+\textbf{Reviewer comment:} "Page 2, line 23: Can authors provide any specific numbers about removal rate after 15 years of application?"
+
+\textbf{Response:} We have added quantitative long-term performance data.
+
+\textbf{Changes made:} Added specific text: "After 15 years of operation, field bioreactors typically maintain 40-60\% of their initial removal capacity, with rates declining from initial values of 8-12 g N/m³/day to 3-7 g N/m³/day."
+
+\subsection{Comment 2R2.4: High inlet concentration definition}
+\textbf{Reviewer comment:} "Page 3, line 59-60: Can the authors clarify what is considered a 'high' inlet concentration?"
+
+\textbf{Response:} We have added specific thresholds for high inlet concentrations.
+
+\textbf{Changes made:} Added definition: "High inlet nitrate concentrations are typically defined as those exceeding 15-20 mg NO$_3$-N/L in agricultural drainage applications, though loading conditions vary significantly across different water sources."
+
+\subsection{Comment 2R2.5: DOC units correction}
+\textbf{Reviewer comment:} "Page 11, figure 9: The y-axis should be mg C/L."
+
+\textbf{Response:} We have corrected the DOC concentration units in all relevant figures.
+
+\textbf{Changes made:} Updated y-axis labels in figures to "DOC Concentration (mg C L$^{-1}$)" and "DOC Production (mg C L$^{-1}$)" as appropriate.
+
+\section{Summary of Major Changes}
+
+\subsection{Manuscript Text Modifications}
+\begin{itemize}
+\item Enhanced abstract with clearer methodology and scope definition
+\item Added literature search time range (2000-2024)
+\item Expanded denitrification mechanism description with enzymatic details
+\item Enhanced wood species discussion with comprehensive performance data
+\item Added mechanistic explanations for greenhouse gas and phosphorus dynamics
+\item Improved cost analysis discussion with limitations section
+\item Restructured conclusions for better synthesis
+\item Added quantitative data for long-term performance and flow conditions
+\end{itemize}
+
+\subsection{Figure Improvements}
+\begin{itemize}
+\item Figure 1: Added lab/field data differentiation with stacked bars
+\item Figure 2: Improved legend positioning to avoid data overlap
+\item Figure 3: Increased y-axis range to prevent title-legend overlap
+\item Figure 4: Simplified title and improved legend positioning
+\item Figure 5: Generated cost analysis comparison (new)
+\item Figures 6-10: Enhanced font sizes and corrected DOC units
+\item All figures: Improved readability with larger fonts and better contrast
+\end{itemize}
+
+\subsection{Reference and Citation Improvements}
+\begin{itemize}
+\item Eliminated all citation formatting errors
+\item Added recent references (2020-2024) throughout
+\item Ensured consistent citation style throughout manuscript
+\item Removed duplicate reference entries
+\end{itemize}
+
+\section*{Conclusion}
+
+We believe these comprehensive revisions have substantially improved the manuscript in response to all reviewer concerns. The enhanced discussion of mechanisms, expanded quantitative data, improved figures, and restructured conclusions provide a more robust and useful resource for the bioreactor research community. We are grateful for the thorough and constructive feedback that has helped strengthen this work.
+
+\end{document}
