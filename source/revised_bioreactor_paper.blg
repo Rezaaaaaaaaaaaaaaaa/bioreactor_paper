@@ -5,48 +5,46 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
 Reallocating 'name_of_file' (item size: 1) to 4 items.
 Database file #1: lit.bib
-Warning--I didn't find a database entry for "RN1180"
-Warning--I didn't find a database entry for "RN282"
 Warning--empty school in RN635
-You've used 24 entries,
+You've used 29 entries,
             2773 wiz_defined-function locations,
-            829 strings with 13687 characters,
-and the built_in function-call counts, 13485 in all, are:
-= -- 1237
-> -- 977
+            870 strings with 16002 characters,
+and the built_in function-call counts, 17030 in all, are:
+= -- 1548
+> -- 1298
 < -- 6
-+ -- 327
-- -- 303
-* -- 1239
-:= -- 2219
-add.period$ -- 145
-call.type$ -- 24
-change.case$ -- 173
-chr.to.int$ -- 24
-cite$ -- 49
-duplicate$ -- 486
-empty$ -- 877
-format.name$ -- 335
-if$ -- 2754
++ -- 434
+- -- 405
+* -- 1591
+:= -- 2811
+add.period$ -- 179
+call.type$ -- 29
+change.case$ -- 222
+chr.to.int$ -- 29
+cite$ -- 59
+duplicate$ -- 590
+empty$ -- 1067
+format.name$ -- 442
+if$ -- 3466
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 23
-newline$ -- 201
-num.names$ -- 96
-pop$ -- 240
+missing$ -- 28
+newline$ -- 245
+num.names$ -- 116
+pop$ -- 309
 preamble$ -- 1
-purify$ -- 149
+purify$ -- 193
 quote$ -- 0
-skip$ -- 398
+skip$ -- 493
 stack$ -- 0
-substring$ -- 366
-swap$ -- 24
+substring$ -- 451
+swap$ -- 29
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 264
+type$ -- 319
 warning$ -- 1
-while$ -- 87
+while$ -- 106
 width$ -- 0
-write$ -- 458
-(There were 3 warnings)
+write$ -- 561
+(There was 1 warning)

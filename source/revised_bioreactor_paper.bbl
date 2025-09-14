@@ -1,9 +1,50 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aalto et~al.(2020)Aalto, Suurnakki, von Ahnen, Siljanen, Pedersen, and
+  Tiirola]{RN239}
+S.~L. Aalto, S.~Suurnakki, M.~von Ahnen, H.~M.~P. Siljanen, P.~B. Pedersen, and
+  M.~Tiirola.
+\newblock Nitrate removal microbiology in woodchip bioreactors: A case-study
+  with full-scale bioreactors treating aquaculture effluents.
+\newblock \emph{Sci Total Environ}, 723:\penalty0 138093, 2020.
+\newblock ISSN 1879-1026 (Electronic) 0048-9697 (Linking).
+\newblock \doi{10.1016/j.scitotenv.2020.138093}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/32222508}.
+\newblock Aalto, Sanni L Suurnakki, Suvi von Ahnen, Mathis Siljanen, Henri M P
+  Pedersen, Per Bovbjerg Tiirola, Marja eng Netherlands 2020/03/31 Sci Total
+  Environ. 2020 Jun 25;723:138093. doi: 10.1016/j.scitotenv.2020.138093. Epub
+  2020 Mar 21.
+
+\bibitem[Aalto et~al.(2022)Aalto, Suurnakki, von Ahnen, Tiirola, and
+  Pedersen]{RN1185}
+S.~L. Aalto, S.~Suurnakki, M.~von Ahnen, M.~Tiirola, and P.~B. Pedersen.
+\newblock Microbial communities in full-scale woodchip bioreactors treating
+  aquaculture effluents.
+\newblock \emph{J Environ Manage}, 301:\penalty0 113852, 2022.
+\newblock ISSN 1095-8630 (Electronic) 0301-4797 (Linking).
+\newblock \doi{10.1016/j.jenvman.2021.113852}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/34592671}.
+\newblock Aalto, Sanni L Suurnakki, Suvi von Ahnen, Mathis Tiirola, Marja
+  Pedersen, Per Bovbjerg eng England 2021/10/01 J Environ Manage. 2022 Jan
+  1;301:113852. doi: 10.1016/j.jenvman.2021.113852. Epub 2021 Sep 27.
+
+\bibitem[Addy et~al.(2016)Addy, Gold, Christianson, David, Schipper, and
+  Ratigan]{RN826}
+K.~Addy, A.~J. Gold, L.~E. Christianson, M.~B. David, L.~A. Schipper, and N.~A.
+  Ratigan.
+\newblock Denitrifying bioreactors for nitrate removal: A meta-analysis.
+\newblock \emph{J Environ Qual}, 45\penalty0 (3):\penalty0 873--81, 2016.
+\newblock ISSN 0047-2425 (Print) 0047-2425 (Linking).
+\newblock \doi{10.2134/jeq2015.07.0399}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pubmed/27136153}.
+\newblock Addy, Kelly Gold, Arthur J Christianson, Laura E David, Mark B
+  Schipper, Louis A Ratigan, Nicole A eng Meta-Analysis 2016/05/03 J Environ
+  Qual. 2016 May;45(3):873-81. doi: 10.2134/jeq2015.07.0399.
 
 \bibitem[Cheesman et~al.(2023)Cheesman, Todd, Owen, AhKee, Lim, Masson, and
   Nelson]{RN1181}
@@ -48,6 +89,17 @@ G.~W. Feyereisen, T.~B. Moorman, L.~E. Christianson, R.~T. Venterea, J.~A.
   Rodney T Coulter, Jeffrey A Tschirner, Ulrike W eng 2016/05/03 J Environ
   Qual. 2016 May;45(3):779-87. doi: 10.2134/jeq2015.07.0407.
 
+\bibitem[Feyereisen et~al.(2020)Feyereisen, Spokas, Strock, Mulla, Ranaivoson,
+  and Coulter]{RN708}
+G.~W. Feyereisen, K.~A. Spokas, J.~S. Strock, D.~J. Mulla, A.~Z. Ranaivoson,
+  and J.~A. Coulter.
+\newblock Nitrate removal and nitrous oxide production from upflow and downflow
+  column woodchip bioreactors.
+\newblock \emph{Agricultural \& Environmental Letters}, 5\penalty0 (1), 2020.
+\newblock \doi{ARTN e20024 10.1002/ael2.20024}.
+\newblock URL \url{<Go to ISI>://WOS:000615237300021}.
+\newblock Qd0sb Times Cited:3 Cited References Count:29.
+
 \bibitem[Feyereisen et~al.(2023)Feyereisen, Wang, Wang, Anderson, Jang, Ghane,
   Coulter, Rosen, Sadowsky, and Ishii]{RN214}
 G.~W. Feyereisen, H.~Wang, P.~Wang, E.~L. Anderson, J.~Jang, E.~Ghane, J.~A.
@@ -59,6 +111,19 @@ G.~W. Feyereisen, H.~Wang, P.~Wang, E.~L. Anderson, J.~Jang, E.~Ghane, J.~A.
 \newblock \doi{ARTN 106920 10.1016/j.ecoleng.2023.106920}.
 \newblock URL \url{<Go to ISI>://WOS:000972677600001}.
 \newblock E0qf0 Times Cited:8 Cited References Count:39.
+
+\bibitem[Gottschall et~al.(2016)Gottschall, Edwards, Craiovan, Frey, Sunohara,
+  Ball, Zoski, Topp, Khan, Clark, and Lapen]{RN370}
+N.~Gottschall, M.~Edwards, E.~Craiovan, S.~K. Frey, M.~Sunohara, B.~Ball,
+  E.~Zoski, E.~Topp, I.~Khan, I.~D. Clark, and D.~R. Lapen.
+\newblock Amending woodchip bioreactors with water treatment plant residuals to
+  treat nitrogen, phosphorus, and veterinary antibiotic compounds in tile
+  drainage.
+\newblock \emph{Ecological Engineering}, 95:\penalty0 852--864, 2016.
+\newblock ISSN 0925-8574.
+\newblock \doi{10.1016/j.ecoleng.2016.06.011}.
+\newblock URL \url{<Go to ISI>://WOS:000385371400097}.
+\newblock Dy8hx Times Cited:24 Cited References Count:70.
 
 \bibitem[Halaburka et~al.(2017)Halaburka, LeFevre, and Luthy]{RN242}
 B.~J. Halaburka, G.~H. LeFevre, and R.~G. Luthy.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1 Portable) (preloaded format=pdflatex 2025.8.29)  9 SEP 2025 16:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1 Portable) (preloaded format=pdflatex 2025.8.29)  12 SEP 2025 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -759,17 +759,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 81.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 81.
-
-
-Package natbib Warning: Citation `RN826' on page 1 undefined on input line 88.
-
-
-Package natbib Warning: Citation `RN826' on page 1 undefined on input line 88.
-
-
-Package natbib Warning: Citation `RN826' on page 1 undefined on input line 88.
-
-[1
+ [1
 
 {C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/data/fonts/map/pdftex/pdf
 tex.map}{C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/fonts/enc
@@ -777,129 +767,91 @@ tex.map}{C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/fonts/enc
 ll/fonts/enc/dvips/lm/lm-rm.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 90.
- [2]
+ [2] [3]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-32.
+37.
 
 (C:\Users\moghaddamr\scoop\apps\miktex\current\texmfs\install\tex/latex/lm\ts1l
 mr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [3{C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/fonts/enc/dvi
+) [4{C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/fonts/enc/dvi
 ps/lm/lm-mathsy.enc}{C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/insta
-ll/fonts/enc/dvips/lm/lm-ts1.enc}]
+ll/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/moghaddamr/scoop/apps/miktex/current
+/texmfs/install/fonts/enc/dvips/lm/lm-mathit.enc}]
+<fig1_removal_rates_scientific.pdf, id=351, 855.81732pt x 566.41373pt>
+File: fig1_removal_rates_scientific.pdf Graphic file (type pdf)
+<use fig1_removal_rates_scientific.pdf>
+Package pdftex.def Info: fig1_removal_rates_scientific.pdf  used on input line 
+180.
+(pdftex.def)             Requested size: 386.95897pt x 256.10245pt.
+ [5] [6 <./fig1_removal_rates_scientific.pdf>]
+<fig3_hydraulic_performance_scientific.pdf, id=473, 1000.05118pt x 421.94237pt>
 
-Package natbib Warning: Citation `RN239' on page 4 undefined on input line 134.
+File: fig3_hydraulic_performance_scientific.pdf Graphic file (type pdf)
+<use fig3_hydraulic_performance_scientific.pdf>
+Package pdftex.def Info: fig3_hydraulic_performance_scientific.pdf  used on inp
+ut line 201.
+(pdftex.def)             Requested size: 386.95897pt x 163.26276pt.
+ [7 <./fig3_hydraulic_performance_scientific.pdf>]
+<fig9_wood_species_comparison_scientific.pdf, id=596, 1144.22023pt x 421.56161p
+t>
+File: fig9_wood_species_comparison_scientific.pdf Graphic file (type pdf)
+<use fig9_wood_species_comparison_scientific.pdf>
+Package pdftex.def Info: fig9_wood_species_comparison_scientific.pdf  used on i
+nput line 234.
+(pdftex.def)             Requested size: 386.95897pt x 142.56358pt.
 
-
-
-Package natbib Warning: Citation `RN1185' on page 4 undefined on input line 134
-.
-
-[4{C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/fonts/enc/dvips
-/lm/lm-mathit.enc}]
-
-! LaTeX Error: File `fig1_removal_rates_scientific' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.160 ...textwidth]{fig1_removal_rates_scientific}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `fig3_hydraulic_performance_scientific' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.175 ...h]{fig3_hydraulic_performance_scientific}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[5]
-
-! LaTeX Error: File `fig9_wood_species_comparison_scientific' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.208 ...{fig9_wood_species_comparison_scientific}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package natbib Warning: Citation `RN370' on page 6 undefined on input line 215.
-
-
-
-Package natbib Warning: Citation `RN370' on page 6 undefined on input line 215.
-
-
-[6]
-
-! LaTeX Error: File `fig4_temperature_scientific' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.223 ...8\textwidth]{fig4_temperature_scientific}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `fig10_temperature_modeling_scientific' n0 undefined on input line 269
-.
-
-<fig7_phosphorus_scientific.pdf, id=895, 855.95345pt x 566.50795pt>
+[8 <./fig9_wood_species_comparison_scientific.pdf>]
+<fig4_temperature_scientific.pdf, id=696, 855.96791pt x 566.4639pt>
+File: fig4_temperature_scientific.pdf Graphic file (type pdf)
+<use fig4_temperature_scientific.pdf>
+Package pdftex.def Info: fig4_temperature_scientific.pdf  used on input line 24
+9.
+(pdftex.def)             Requested size: 386.95897pt x 256.09056pt.
+<fig10_temperature_modeling_scientific.pdf, id=702, 999.96082pt x 421.60823pt>
+File: fig10_temperature_modeling_scientific.pdf Graphic file (type pdf)
+<use fig10_temperature_modeling_scientific.pdf>
+Package pdftex.def Info: fig10_temperature_modeling_scientific.pdf  used on inp
+ut line 260.
+(pdftex.def)             Requested size: 386.95897pt x 163.15277pt.
+ [9 <./fig4_temperature_scientific.pdf>]
+<fig2_rate_efficiency_scientific.pdf, id=810, 783.74306pt x 566.39038pt>
+File: fig2_rate_efficiency_scientific.pdf Graphic file (type pdf)
+<use fig2_rate_efficiency_scientific.pdf>
+Package pdftex.def Info: fig2_rate_efficiency_scientific.pdf  used on input lin
+e 273.
+(pdftex.def)             Requested size: 386.95897pt x 279.65111pt.
+ [10 <./fig10_temperature_modeling_scientific.pdf> <./fig2_rate_efficiency_scie
+ntific.pdf>]
+<fig6_greenhouse_gas_scientific.pdf, id=997, 1072.17752pt x 493.78915pt>
+File: fig6_greenhouse_gas_scientific.pdf Graphic file (type pdf)
+<use fig6_greenhouse_gas_scientific.pdf>
+Package pdftex.def Info: fig6_greenhouse_gas_scientific.pdf  used on input line
+ 286.
+(pdftex.def)             Requested size: 386.95897pt x 178.21602pt.
+ [11 <./fig6_greenhouse_gas_scientific.pdf>]
+<fig7_phosphorus_scientific.pdf, id=1092, 855.95345pt x 566.50795pt>
 File: fig7_phosphorus_scientific.pdf Graphic file (type pdf)
 <use fig7_phosphorus_scientific.pdf>
-Package pdftex.def Info: fig7_phosphorus_scientific.pdf  used on input line 273
+Package pdftex.def Info: fig7_phosphorus_scientific.pdf  used on input line 310
 .
 (pdftex.def)             Requested size: 386.95897pt x 256.11047pt.
-
-Package natbib Warning: Citation `RN282' on page 10 undefined on input line 278
-.
-
-[10 <./fig6_greenhouse_gas_scientific.pdf>]
-<fig8_doc_leaching_scientific.pdf, id=981, 928.11746pt x 566.33083pt>
+ [12 <./fig7_phosphorus_scientific.pdf>]
+<fig8_doc_leaching_scientific.pdf, id=1198, 928.11746pt x 566.33083pt>
 File: fig8_doc_leaching_scientific.pdf Graphic file (type pdf)
 <use fig8_doc_leaching_scientific.pdf>
-Package pdftex.def Info: fig8_doc_leaching_scientific.pdf  used on input line 2
-86.
+Package pdftex.def Info: fig8_doc_leaching_scientific.pdf  used on input line 3
+23.
 (pdftex.def)             Requested size: 386.95897pt x 236.12038pt.
- [11 <./fig7_phosphorus_scientific.pdf> <./fig8_doc_leaching_scientific.pdf>] [
-12] [13] [14]
-
-Package natbib Warning: Citation `RN282' on page 15 undefined on input line 369
-.
-
-[15]
-
-Package natbib Warning: Citation `RN282' on page 16 undefined on input line 394
-.
-
-
-Package natbib Warning: Citation `RN282' on page 16 undefined on input line 404
-.
-
-[16] (revised_bioreactor_paper.bbl
+ [13 <./fig8_doc_leaching_scientific.pdf>]
+[14] [15] [16] [17] [18]
+<fig5_cost_analysis.pdf, id=1433, 855.87755pt x 566.4041pt>
+File: fig5_cost_analysis.pdf Graphic file (type pdf)
+<use fig5_cost_analysis.pdf>
+Package pdftex.def Info: fig5_cost_analysis.pdf  used on input line 461.
+(pdftex.def)             Requested size: 386.95897pt x 256.08081pt.
+ [19 <./fig5_cost_analysis.pdf>] [20] [21] [22]
+(revised_bioreactor_paper.bbl
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 7.
 
@@ -911,126 +863,55 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [17] [18]
-Underfull \hbox (badness 2088) in paragraph at lines 228--234
+ [23] [24] [25]
+Underfull \hbox (badness 2088) in paragraph at lines 293--299
 []\T1/lmr/m/n/12 (+20) K. Schrimpelová.  Phos-pho-rus re-moval from agri-cul-tu
 ral runoff by en-hanced den-i-
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 228--234
+Underfull \hbox (badness 1590) in paragraph at lines 293--299
 \T1/lmr/m/n/12 (+20) tri-fy-ing wood-chip biore-ac-tors.  \T1/lmr/m/it/12 (+20)
  In-ter-na-tional Mul-ti-dis-ci-plinary Sci-en-tific ...\T1/lmr/m/n/12 (+20) , 
 2018.
  []
 
-! Misplaced alignment tab character &.
-<argument> Acs Es&
-                  T Engineering
-l.263 \newblock \emph{Acs Es&T Engineering}
-                                           , 4\penalty0 (6):\penalty0 1433--...
-
-? 
-! Emergency stop.
-<argument> Acs Es&
-                  T Engineering
-l.263 \newblock \emph{Acs Es&T Engineering}
-                                           , 4\penalty0 (6):\penalty0 1433--...
-End of file on the terminal!
-
- 
-Here is how much of TeX's memory you used:
- 16423 strings out of 474486
- 270029 string characters out of 5736185
- 1943542 words of memory out of 5000000
- 38167 multiletter control sequences out of 15000+600000
- 639240 words of font info for 200 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1671b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
-th any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[9] [10] [11]
-
-Package natbib Warning: Citation `RN370' on page 12 undefined on input line 369
-.
-
-[12]
-
-Package natbib Warning: Citation `RN370' on page 13 undefined on input line 394
-.
-
-
-Package natbib Warning: Citation `RN370' on page 13 undefined on input line 404
-.
-
-[13] (revised_bioreactor_paper.bbl
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-7.
-
-(C:\Users\moghaddamr\scoop\apps\miktex\current\texmfs\install\tex/latex/lm\t1lm
-tt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [14] [15]
-Underfull \hbox (badness 2088) in paragraph at lines 228--234
-[]\T1/lmr/m/n/12 (+20) K. Schrimpelová.  Phos-pho-rus re-moval from agri-cul-tu
-ral runoff by en-hanced den-i-
- []
-
-
-Underfull \hbox (badness 1590) in paragraph at lines 228--234
-\T1/lmr/m/n/12 (+20) tri-fy-ing wood-chip biore-ac-tors.  \T1/lmr/m/it/12 (+20)
- In-ter-na-tional Mul-ti-dis-ci-plinary Sci-en-tific ...\T1/lmr/m/n/12 (+20) , 
-2018.
- []
-
-[16])
-
-Package natbib Warning: There were undefined citations.
-
-[17] (revised_bioreactor_paper.aux)
+) [26] (revised_bioreactor_paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `revised_bioreactor_paper.out' has not change
 d.
-(rerunfilecheck)             Checksum: BF1C292854DAFD426532A64B74FBA737;7200.
+(rerunfilecheck)             Checksum: FD5C27D9478B73D2FE31D8A53E7E0022;10100.
  ) 
 Here is how much of TeX's memory you used:
- 16623 strings out of 474486
- 278041 string characters out of 5736185
+ 16551 strings out of 474486
+ 272069 string characters out of 5736185
  1942542 words of memory out of 5000000
- 38360 multiletter control sequences out of 15000+600000
- 639563 words of font info for 203 fonts, out of 8000000 for 9000
+ 38218 multiletter control sequences out of 15000+600000
+ 641471 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1671b,622s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1310b,624s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/fonts/type1/pub
 lic/lm/lmbx10.pfb><C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install
 /fonts/type1/public/lm/lmbx12.pfb><C:/Users/moghaddamr/scoop/apps/miktex/curren
 t/texmfs/install/fonts/type1/public/lm/lmmi12.pfb><C:/Users/moghaddamr/scoop/ap
-ps/miktex/current/texmfs/install/fonts/type1/public/lm/lmr10.pfb><C:/Users/mogh
-addamr/scoop/apps/miktex/current/texmfs/install/fonts/type1/public/lm/lmr12.pfb
+ps/miktex/current/texmfs/install/fonts/type1/public/lm/lmmi8.pfb><C:/Users/mogh
+addamr/scoop/apps/miktex/current/texmfs/install/fonts/type1/public/lm/lmr10.pfb
 ><C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/fonts/type1/publ
-ic/lm/lmr17.pfb><C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/f
-onts/type1/public/lm/lmr7.pfb><C:/Users/moghaddamr/scoop/apps/miktex/current/te
-xmfs/install/fonts/type1/public/lm/lmr8.pfb><C:/Users/moghaddamr/scoop/apps/mik
-tex/current/texmfs/install/fonts/type1/public/lm/lmri12.pfb><C:/Users/moghaddam
-r/scoop/apps/miktex/current/texmfs/install/fonts/type1/public/lm/lmsy10.pfb><C:
-/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/fonts/type1/public/l
-m/lmsy8.pfb><C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/fonts
-/type1/public/lm/lmtt12.pfb>
-Output written on revised_bioreactor_paper.pdf (17 pages, 424005 bytes).
+ic/lm/lmr12.pfb><C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/f
+onts/type1/public/lm/lmr17.pfb><C:/Users/moghaddamr/scoop/apps/miktex/current/t
+exmfs/install/fonts/type1/public/lm/lmr7.pfb><C:/Users/moghaddamr/scoop/apps/mi
+ktex/current/texmfs/install/fonts/type1/public/lm/lmr8.pfb><C:/Users/moghaddamr
+/scoop/apps/miktex/current/texmfs/install/fonts/type1/public/lm/lmri12.pfb><C:/
+Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/fonts/type1/public/lm
+/lmsy10.pfb><C:/Users/moghaddamr/scoop/apps/miktex/current/texmfs/install/fonts
+/type1/public/lm/lmsy8.pfb><C:/Users/moghaddamr/scoop/apps/miktex/current/texmf
+s/install/fonts/type1/public/lm/lmtt12.pfb>
+Output written on revised_bioreactor_paper.pdf (26 pages, 874750 bytes).
 PDF statistics:
- 692 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 500000)
- 43801 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1743 PDF objects out of 2073 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
+ 43939 words of extra memory for PDF output out of 51595 (max. 10000000)
 

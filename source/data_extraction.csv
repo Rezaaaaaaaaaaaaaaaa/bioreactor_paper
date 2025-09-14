@@ -1,0 +1,59 @@
+Study,Parameter,Value,Units,Notes,Source
+Aalto_2020,N2O_production,6,%,Under high NO3 and low C conditions,RN239
+Aalto_2022,Autotrophic_denitrifiers,54,%,Outlet water samples,RN1185
+Aalto_2022,Autotrophic_denitrifiers,56,%,Outlet biofilm samples,RN1185
+Abusallout_2017,DOC_initial,71.8,mg/L,Initial woodchip flush,RN1109
+Abusallout_2017,DOC_week1,20.7,mg/L,After first week,RN1109
+Abusallout_2017,DOC_longterm,3.0,mg/L,After 240 days,RN1109
+Abusallout_2017,DOC_removal_filter,44.2,%,Steel chip filter removal,RN1109
+Audet_2021,N_removal_range,17-73,%,Yearly incoming N removal,RN1184
+Audet_2021,N2O_emissions_max,2.4,%,Max N2O release of removed N,RN1184
+Audet_2021,N2O_emissions_mean,0.6,%,Mean N2O emissions,RN1184
+Audet_2021,HRT_threshold,60,h,Optimal HRT for low emissions,RN1184
+Bock_2018,Removal_rate_range,0.25-6.06,g N/m3/day,Batch experiments,RN1187
+Bock_2018,Influent_threshold,5-10,mg/L,NO3-N threshold for biochar benefit,RN1187
+Davis_2019,N2O_emissions_surface,1.0,mg N2O-N/m3/day,Average surface production,RN1188
+Davis_2019,N2O_emissions_dissolved,24,mg N2O-N/m3/day,Average dissolved production,RN1188
+Davis_2019,CH4_emissions_surface,6.0,mg CH4-C/m3/day,Average surface production,RN1188
+Davis_2019,CH4_emissions_dissolved,310,mg CH4-C/m3/day,Average dissolved production,RN1188
+Davis_2019,Denitrification_efficiency,0.51,%,Removed nitrate emitted as N2O,RN1188
+Cheesman_2023,N2O_IPCC_factor,3.3,fold,Lower than expected 0.75% factor,RN1149
+Cheesman_2023,Load_reduction,0.11,kg N/ha/year,Australia sugarcane study,RN1149
+Cheesman_2023,Nitrate_concentration_mean,0.2,mg/L,Drain nitrate-N concentrations,RN1149
+Cheesman_2023,Nitrate_concentration_max,3.3,mg/L,Maximum observed,RN1149
+Cheesman_2023,Concentration_reduction,41,%,Average nitrate-N reduction,RN1149
+Robertson_2019,TSS_removal,99,%,Total suspended solids,RN1190
+Robertson_2019,TP_removal,71,%,Total phosphorus,RN1190
+Robertson_2019,PP_removal,91,%,Particulate phosphorus,RN1190
+Robertson_2019,Dissolved_P,1.5,mg/L,Little changed in wash water,RN1190
+Christianson_2012,Removal_rates_median,5.1,g N/m3/day,Literature review,RN310
+Christianson_2012,Removal_rates_mean,7.2,g N/m3/day,Literature review,RN310
+Christianson_2012,Load_reduction_median,46,%,Literature review,RN310
+Christianson_2012,Load_reduction_mean,40,%,Literature review,RN310
+Christianson_2012,Cost_range_low,2.50,$/kg N/year,Installation cost efficiency,RN310
+Christianson_2012,Cost_range_high,48,$/kg N/year,Installation cost efficiency,RN310
+Schipper_2010,Removal_rates_range_low,2,g N/m3/day,Woodchip systems,RN625
+Schipper_2010,Removal_rates_range_high,22,g N/m3/day,Woodchip systems,RN625
+Schipper_2010,Field_removal_range_low,0.01,g N/m3/day,Field-scale systems,RN625
+Schipper_2010,Field_removal_range_high,22,g N/m3/day,Field-scale systems,RN625
+Halaburka_2017,Temperature_coefficient,1.16,theta,Arrhenius model parameter,RN242
+Halaburka_2017,Temperature_coefficient_CI,0.08,±,95% confidence interval,RN242
+Halaburka_2017,R2_nitrate,45,%,Temperature explains 45% variance,RN242
+Halaburka_2017,R2_DOC,40,%,Temperature explains 40% variance,RN242
+Halaburka_2017,Nitrate_threshold,2,mg-N/L,Above this for zero-order kinetics,RN242
+Maxwell_2020,Q10_fresh,2.1,,Fresh woodchips continuous,RN228
+Maxwell_2020,Q10_aged,3.0,,Aged woodchips >3 years,RN228
+Maxwell_2020,Q10_saturated,1.8,,Continuously saturated,RN228
+Maxwell_2020,Q10_drying,2.4,,After drying-rewetting cycles,RN228
+Moghaddam_2023,Hydraulic_conductivity_2018,4601,m/day,Without carbon dosing,RN239
+Moghaddam_2023,Hydraulic_conductivity_2020,2800,m/day,First year carbon dosing,RN239
+Moghaddam_2023,Hydraulic_conductivity_2021,1600,m/day,Second year carbon dosing,RN239
+Moghaddam_2023,Removal_rate_2020,8.6,g N/m3/day,With 14.4 L/day methanol,RN239
+Moghaddam_2023,Removal_rate_2021,5.1,g N/m3/day,With halved dosing rate,RN239
+Wickramarathne_2021,EAB_ash_removal,12.8,g N/m3/day,EAB-killed ash performance,RN327
+Wickramarathne_2021,Commercial_hardwood,12.5,g N/m3/day,Commercial baseline,RN327
+Wickramarathne_2021,High_tannin_oak,15.2,g N/m3/day,Superior performance,RN327
+Wickramarathne_2021,EAB_N2O_relative,0.7,,Relative to commercial baseline,RN327
+Wickramarathne_2021,Oak_N2O_relative,1.2,,Higher than baseline,RN327
+Wickramarathne_2021,Oak_P_leaching,3.1,mg P/L,Elevated phosphorus leaching,RN327
+Wickramarathne_2021,Commercial_P_leaching,2.5,mg P/L,Baseline phosphorus,RN327
