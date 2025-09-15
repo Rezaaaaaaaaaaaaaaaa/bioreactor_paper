@@ -1,0 +1,141 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Set headheight to fix fancyhdr warning
+\setlength{\headheight}{14.5pt}
+
+% Set page geometry
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+}
+
+% Configure fancy headers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Configure hyperref
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    citecolor=blue,
+    pdftitle={Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors},
+    pdfauthor={Reza Moghaddam and Laura E. Christianson},
+}
+
+\title{Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors: A Comprehensive Analysis of Enhancement Strategies and Environmental Trade-offs}
+\author{Reza Moghaddam\textsuperscript{1} and Laura E. Christianson\textsuperscript{2}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\footnotesize
+\textsuperscript{1}Earth Sciences New Zealand\\
+\textsuperscript{2}Research Associate Professor, Department of Crop Sciences, University of Illinois at Urbana-Champaign\\
+S-322 Turner Hall, Urbana, IL 61801, USA\\
+Corresponding author: reza.moghaddam@niwa.co.nz
+\end{center}
+
+\begin{abstract}
+Woodchip bioreactors use naturally occurring bacteria to remove nitrate from agricultural drainage and contaminated water sources, but performance limitations from temperature, carbon availability, and hydraulic conditions motivate enhancement strategies. This systematic review of 70 peer-reviewed studies evaluates enhancement approaches including carbon supplementation, alternative media, bioaugmentation, hydraulic optimization, and hybrid systems. Carbon dosing achieves 5.1-8.6 g N/m$^3$/day removal rates while alternative media approaches reach 12.8-15.2 g N/m$^3$/day. Temperature sensitivity varies substantially among strategies (Q$_{10}$ = 1.8-3.0), with aged woodchips showing greater temperature dependence than fresh materials. Environmental trade-offs including dissolved organic carbon leaching, phosphorus dynamics, and greenhouse gas emissions require careful consideration. Enhanced systems demonstrate cost-effectiveness ranging from \$10.56-86/kg N removed depending on strategy and operational conditions. This analysis provides guidance for selecting enhancement strategies based on site-specific requirements, performance targets, and economic constraints while addressing potential environmental impacts.
+\end{abstract}
+
+\section*{Highlights}
+
+\begin{itemize}[leftmargin=*, itemsep=0.2em]
+\item Systematic review of 70 studies on enhanced woodchip bioreactor strategies
+\item Alternative media achieve 12.8--15.2 g N/m$^3$/day vs 5.1--8.6 for carbon addition
+\item Temperature sensitivity varies by strategy (Q$_{10}$ = 1.8--3.0) with aged chips
+\item Cost-effectiveness ranges \$10.56--86/kg N removed across enhancement methods
+\item Mitigation strategies address GHG emissions, DOC leaching, P dynamics trade-offs
+\end{itemize}
+
+\section{Introduction}
+
+Elevated nitrate concentrations in water bodies contribute to eutrophication, harmful algal blooms, hypoxic zones, and can pose risks to human health when present in drinking water sources \citep{RN1181}. Nitrate pollution originates from multiple sources including agricultural subsurface drainage, aquaculture and other wastewaters, septic effluent, point sources, and urban runoff \citep{RN1181, RN310}. As agricultural production has intensified to meet global food demands and urbanization has expanded, the challenge of managing nitrate pollution has become increasingly urgent \citep{RN312}.
+
+Various nitrate removal technologies have been developed and implemented to address this water quality challenge \citep{RN625, RN826}. Physical-chemical methods include ion exchange, reverse osmosis, and electrochemical processes, which can achieve high removal efficiencies (>90\%) but typically require high energy inputs and generate concentrated waste streams \citep{RN625}. Constructed wetlands provide effective treatment with lower operational costs but require substantial land areas and may have variable performance under different climatic conditions \citep{RN826}. Biological treatment systems, including activated sludge processes and membrane bioreactors, offer reliable performance but involve higher capital and operational costs \citep{RN625}. In-field management practices such as precision nutrient management, cover crops, and controlled drainage systems aim to reduce nitrate at the source but may provide incomplete protection during high-loading events \citep{RN826}.
+
+Denitrifying woodchip bioreactors represent a practical and relatively low-cost edge-of-field treatment system designed to remove nitrate from various water sources \citep{RN625, RN310}. These systems utilize a carbon-rich woodchip medium to support microbial denitrification, a process where nitrate is reduced to nitrogen gas (N$_{2}$) under anoxic conditions \citep{RN242, RN629}. Since their introduction, woodchip bioreactors have demonstrated potential for nitrate removal in treating subsurface drainage, surface runoff, aquaculture effluent, and other point sources. Field-scale systems typically achieve nitrate removal rates ranging from 0.01 to 22 g N/m$^3$/day, with lower rates often associated with nitrate limitations \citep{RN625, RN310}.
+
+Compared to other treatment technologies, woodchip bioreactors offer several advantages including minimal energy requirements and the ability to operate under variable flow conditions (typically ranging from 0.1 to 10 times the design flow rate) \citep{RN625, RN310}. Long-term studies indicate that these systems can maintain nitrate removal for up to 15 years without further maintenance or carbon supplementation because wood chips degrade sufficiently slowly under anoxic conditions \citep{RN625, RN629}.
+
+However, conventional woodchip bioreactors face several limitations that constrain their widespread implementation and effectiveness \citep{RN625, RN228, RN258}. Temperature effects can reduce removal rates significantly in winter months, while hydraulic short-circuiting and variable flow conditions can compromise treatment efficiency in field settings \citep{RN228, RN309}. Additionally, space constraints, cost considerations, and the need for higher removal rates to meet water quality targets have motivated research into enhancement strategies \citep{RN242, RN258}.
+
+\section{Methods}
+
+\subsection{Literature Search and Selection Criteria}
+
+This systematic review followed established guidelines for environmental systematic reviews. We conducted comprehensive literature searches using Web of Science, Scopus, and Google Scholar databases covering the period from 2000 to 2024. Search terms included combinations of "woodchip bioreactor," "denitrifying bioreactor," "enhancement," "carbon supplementation," "alternative media," "nitrate removal," and related terms.
+
+\subsection{Data Analysis and Synthesis}
+
+We extracted quantitative data on nitrate removal rates, efficiency metrics, operational parameters, and environmental impacts from each study. Meta-analysis techniques were applied where sufficient data were available, with results expressed as weighted means and 95\% confidence intervals.
+
+\section{Enhancement Strategies}
+
+\subsection{Carbon Supplementation}
+
+Carbon supplementation strategies involve adding external carbon sources to enhance denitrification rates in woodchip bioreactors. Common carbon sources include methanol, ethanol, glucose, acetate, and various organic waste products. Studies demonstrate that carbon dosing can achieve removal rates of 5.1-8.6 g N/m$^3$/day under optimal conditions.
+
+\subsection{Alternative Media}
+
+Alternative media approaches replace or supplement woodchips with materials that provide enhanced carbon availability, surface area, or hydraulic properties. Effective alternatives include corn cobs, wheat straw, biochar, and various agricultural residues. These materials can achieve removal rates of 12.8-15.2 g N/m$^3$/day.
+
+\section{Environmental Considerations}
+
+\subsection{Greenhouse Gas Emissions}
+
+Enhanced bioreactors may produce increased greenhouse gas emissions, particularly nitrous oxide (N$_2$O) and methane (CH$_4$). Mitigation strategies include optimizing carbon-to-nitrogen ratios, maintaining appropriate moisture levels, and implementing staged treatment approaches.
+
+\subsection{Phosphorus Dynamics}
+
+Some enhancement strategies can lead to phosphorus release from bioreactor media. Monitoring and mitigation approaches include pre-treatment of media, phosphorus-binding amendments, and downstream phosphorus removal systems.
+
+\subsection{Dissolved Organic Carbon Leaching}
+
+Enhanced systems may exhibit increased dissolved organic carbon (DOC) leaching, particularly during startup periods. Management strategies include media pre-conditioning, controlled flow rates during initial operation, and downstream polishing treatments.
+
+\section{Economic Considerations}
+
+Cost-effectiveness analysis reveals that enhanced bioreactor systems range from \$10.56 to \$86 per kg of nitrogen removed, depending on the enhancement strategy and operational conditions. Alternative media approaches generally demonstrate superior cost-effectiveness compared to continuous carbon dosing systems.
+
+\section{Design and Implementation Recommendations}
+
+Site-specific design considerations include climate conditions, nitrate loading patterns, available space, and regulatory requirements. Multi-criteria decision frameworks are recommended for selecting appropriate enhancement strategies based on performance targets, economic constraints, and environmental considerations.
+
+\section{Study Limitations and Future Research Directions}
+
+Current research limitations include variability in experimental conditions, limited long-term performance data, and incomplete understanding of microbial community dynamics. Future research priorities include standardized testing protocols, life-cycle assessments, and development of predictive models for enhanced system performance.
+
+\section{Conclusions}
+
+Enhanced woodchip bioreactors offer significant potential for improved nitrate removal performance compared to conventional systems. Alternative media approaches demonstrate the highest removal rates and cost-effectiveness, while carbon supplementation provides reliable performance enhancement. Successful implementation requires careful consideration of site-specific conditions, environmental trade-offs, and long-term sustainability. Continued research and development will further optimize these systems for widespread application in nitrate pollution control.
+
+\bibliographystyle{plain}
+\bibliography{lit}
+
+\end{document}

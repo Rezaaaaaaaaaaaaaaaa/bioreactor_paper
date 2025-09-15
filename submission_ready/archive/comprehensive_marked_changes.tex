@@ -19,6 +19,18 @@
 \usepackage{lmodern}
 \usepackage{pdflscape}
 
+% Define colors for different types of changes
+\definecolor{addedtext}{RGB}{0,100,0}
+\definecolor{deletedtext}{RGB}{200,0,0}
+\definecolor{replacedtext}{RGB}{0,0,200}
+\definecolor{commenttext}{RGB}{150,0,150}
+
+% Define commands for marking changes
+\newcommand{\added}[1]{\textcolor{addedtext}{\textbf{[ADDED: #1]}}}
+\newcommand{\deleted}[1]{\textcolor{deletedtext}{\textbf{[DELETED: #1]}}}
+\newcommand{\replaced}[2]{\textcolor{deletedtext}{\textbf{[OLD: #1]}} \textcolor{replacedtext}{\textbf{[NEW: #2]}}}
+\newcommand{\comment}[1]{\textcolor{commenttext}{\textbf{[COMMENT: #1]}}}
+
 % Set headheight to fix fancyhdr warning
 \setlength{\headheight}{14.5pt}
 
@@ -40,7 +52,7 @@
 % Configure fancy headers
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors}
+\fancyhead[L]{Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors \added{- Comprehensive Marked Changes}}
 \fancyhead[R]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
@@ -51,7 +63,7 @@
     filecolor=magenta,
     urlcolor=blue,
     citecolor=blue,
-    pdftitle={Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors},
+    pdftitle={Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors - Comprehensive Marked Changes},
     pdfauthor={Reza Moghaddam and Laura E. Christianson},
 }
 
@@ -61,8 +73,8 @@
 \renewcommand{\textfraction}{0.1}
 \renewcommand{\floatpagefraction}{0.75}
 
-\title{Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors: A Comprehensive Analysis of Enhancement Strategies and Environmental Trade-offs}
-\author{Reza Moghaddam\textsuperscript{1} and Laura E. Christianson\textsuperscript{2}}
+\title{Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors: A Comprehensive Analysis of Enhancement Strategies and Environmental Trade-offs \added{- Complete Marked Changes}}
+\author{Reza Moghaddam\textsuperscript{1}\deleted{,*} and Laura E. Christianson\textsuperscript{2}}
 \date{\today}
 
 \begin{document}
@@ -74,13 +86,15 @@
 \textsuperscript{1}Earth Sciences New Zealand\\
 \textsuperscript{2}Research Associate Professor, Department of Crop Sciences, University of Illinois at Urbana-Champaign\\
 S-322 Turner Hall, Urbana, IL 61801, USA\\
-Corresponding author: reza.moghaddam@niwa.co.nz
+\deleted{*}Corresponding author: reza.moghaddam@niwa.co.nz
 \end{center}
 
 \begin{abstract}
-Woodchip bioreactors use naturally occurring bacteria to remove nitrate from agricultural drainage and contaminated water sources, but performance limitations from temperature, carbon availability, and hydraulic conditions motivate enhancement strategies. This systematic review of 70 peer-reviewed studies evaluates enhancement approaches including carbon supplementation, alternative media, bioaugmentation, hydraulic optimization, and hybrid systems. Carbon dosing achieves 5.1-8.6 g N/m$^3$/day removal rates while alternative media approaches reach 12.8-15.2 g N/m$^3$/day. Temperature sensitivity varies substantially among strategies (Q$_{10}$ = 1.8-3.0), with aged woodchips showing greater temperature dependence than fresh materials. Environmental trade-offs including dissolved organic carbon leaching, phosphorus dynamics, and greenhouse gas emissions require careful consideration. Enhanced systems demonstrate cost-effectiveness ranging from \$10.56-86/kg N removed depending on strategy and operational conditions. This analysis provides guidance for selecting enhancement strategies based on site-specific requirements, performance targets, and economic constraints while addressing potential environmental impacts.
+\replaced{Denitrifying woodchip bioreactors function as passive treatment systems that utilize naturally occurring bacteria to remove nitrate from agricultural drainage water and other contaminated sources. However, their performance can be limited by factors such as temperature, carbon availability, and hydraulic conditions. This systematic review synthesizes current knowledge on enhancement strategies for woodchip bioreactors to optimize nitrate removal while minimizing unintended environmental consequences. We systematically reviewed 70 peer-reviewed studies examining various enhancement approaches, including carbon supplementation, alternative media, bioaugmentation, hydraulic optimization, mixed media systems, and hybrid systems. Our analysis indicates that carbon dosing and alternative media can achieve the highest nitrate removal rates (up to 38 g N/m$^3$/day), but may introduce additional operational complexity and costs. Temperature sensitivity varies significantly among enhancement strategies, with Q$_{10}$ values ranging from 1.8 to 3.0, with aged woodchips showing higher temperature dependence than fresh materials. Additionally, we address the potential for pollution swapping, particularly regarding dissolved organic carbon leaching, phosphorus dynamics, and greenhouse gas emissions. This integrated analysis provides guidance for selecting enhancement strategies based on site-specific conditions, regulatory requirements, and operational constraints.}{Woodchip bioreactors use naturally occurring bacteria to remove nitrate from agricultural drainage and contaminated water sources, but performance limitations from temperature, carbon availability, and hydraulic conditions motivate enhancement strategies. This systematic review of 70 peer-reviewed studies evaluates enhancement approaches including carbon supplementation, alternative media, bioaugmentation, hydraulic optimization, and hybrid systems. Carbon dosing achieves 5.1-8.6 g N/m$^3$/day removal rates while alternative media approaches reach 12.8-15.2 g N/m$^3$/day. Temperature sensitivity varies substantially among strategies (Q$_{10}$ = 1.8-3.0), with aged woodchips showing greater temperature dependence than fresh materials. Environmental trade-offs including dissolved organic carbon leaching, phosphorus dynamics, and greenhouse gas emissions require careful consideration. Enhanced systems demonstrate cost-effectiveness ranging from \$10.56-86/kg N removed depending on strategy and operational conditions. This analysis provides guidance for selecting enhancement strategies based on site-specific requirements, performance targets, and economic constraints while addressing potential environmental impacts.}
 \end{abstract}
 
+\comment{NEW SECTION: Highlights added as required by journal guidelines}
+\textcolor{addedtext}{\textbf{[ADDED SECTION]}}
 \section*{Highlights}
 
 \begin{itemize}[leftmargin=*, itemsep=0.2em]
@@ -95,11 +109,11 @@ Woodchip bioreactors use naturally occurring bacteria to remove nitrate from agr
 
 Elevated nitrate concentrations in water bodies contribute to eutrophication, harmful algal blooms, hypoxic zones, and can pose risks to human health when present in drinking water sources \citep{RN1181}. Nitrate pollution originates from multiple sources including agricultural subsurface drainage, aquaculture and other wastewaters, septic effluent, point sources, and urban runoff \citep{RN1181, RN310}. As agricultural production has intensified to meet global food demands and urbanization has expanded, the challenge of managing nitrate pollution has become increasingly urgent \citep{RN312}.
 
-Various nitrate removal technologies have been developed and implemented to address this water quality challenge \citep{RN625, RN826}. Physical-chemical methods include ion exchange, reverse osmosis, and electrochemical processes, which can achieve high removal efficiencies (>90\%) but typically require high energy inputs and generate concentrated waste streams \citep{RN625}. Constructed wetlands provide effective treatment with lower operational costs but require substantial land areas and may have variable performance under different climatic conditions \citep{RN826}. Biological treatment systems, including activated sludge processes and membrane bioreactors, offer reliable performance but involve higher capital and operational costs \citep{RN625}. In-field management practices such as precision nutrient management, cover crops, and controlled drainage systems aim to reduce nitrate at the source but may provide incomplete protection during high-loading events \citep{RN826}.
+\replaced{Various nitrate removal technologies have been developed and implemented to address this water quality challenge. Physical-chemical methods include ion exchange, reverse osmosis, and electrochemical processes, which can achieve high removal efficiencies (>90\%) but typically require high energy inputs and generate concentrated waste streams. Constructed wetlands provide effective treatment with lower operational costs but require substantial land areas and may have variable performance under different climatic conditions. Biological treatment systems, including activated sludge processes and membrane bioreactors, offer reliable performance but involve higher capital and operational costs. In-field management practices such as precision nutrient management, cover crops, and controlled drainage systems aim to reduce nitrate at the source but may provide incomplete protection during high-loading events.}{Various nitrate removal technologies have been developed and implemented to address this water quality challenge \citep{RN625, RN826}. Physical-chemical methods include ion exchange, reverse osmosis, and electrochemical processes, which can achieve high removal efficiencies (>90\%) but typically require high energy inputs and generate concentrated waste streams \citep{RN625}. Constructed wetlands provide effective treatment with lower operational costs but require substantial land areas and may have variable performance under different climatic conditions \citep{RN826}. Biological treatment systems, including activated sludge processes and membrane bioreactors, offer reliable performance but involve higher capital and operational costs \citep{RN625}. In-field management practices such as precision nutrient management, cover crops, and controlled drainage systems aim to reduce nitrate at the source but may provide incomplete protection during high-loading events \citep{RN826}.}
 
 Denitrifying woodchip bioreactors represent a practical and relatively low-cost edge-of-field treatment system designed to remove nitrate from various water sources \citep{RN625, RN310}. These systems utilize a carbon-rich woodchip medium to support microbial denitrification, a process where nitrate is reduced to nitrogen gas (N$_{2}$) under anoxic conditions \citep{RN242, RN629}. Since their introduction, woodchip bioreactors have demonstrated potential for nitrate removal in treating subsurface drainage, surface runoff, aquaculture effluent, and other point sources. Field-scale systems typically achieve nitrate removal rates ranging from 0.01 to 22 g N/m$^3$/day, with lower rates often associated with nitrate limitations \citep{RN625, RN310}.
 
-Compared to other treatment technologies, woodchip bioreactors offer several advantages including minimal energy requirements and the ability to operate under variable flow conditions (typically ranging from 0.1 to 10 times the design flow rate) \citep{RN625, RN310}. Long-term studies indicate that these systems can maintain nitrate removal for up to 15 years without further maintenance or carbon supplementation because wood chips degrade sufficiently slowly under anoxic conditions \citep{RN625, RN629}.
+\replaced{Compared to other treatment technologies, woodchip bioreactors offer several advantages including minimal energy requirements and the ability to operate under variable flow conditions \citep{RN625, RN310}. Long-term studies indicate that these systems can maintain nitrate removal for up to 15 years without further maintenance or carbon supplementation because wood chips degrade sufficiently slowly under anoxic conditions \citep{RN625, RN629}.}{Compared to other treatment technologies, woodchip bioreactors offer several advantages including minimal energy requirements and the ability to operate under variable flow conditions (typically ranging from 0.1 to 10 times the design flow rate) \citep{RN625, RN310}. Long-term studies indicate that these systems can maintain nitrate removal for up to 15 years without further maintenance or carbon supplementation because wood chips degrade sufficiently slowly under anoxic conditions \citep{RN625, RN629}.}
 
 However, conventional woodchip bioreactors face several limitations that constrain their widespread implementation and effectiveness. Performance is often limited by carbon availability, particularly under cold conditions or high nitrate loading \citep{RN625, RN228, RN258}. Temperature effects can reduce removal rates significantly in winter months, while hydraulic short-circuiting and variable flow conditions can compromise treatment efficiency in field settings \citep{RN228, RN309}. Additionally, space constraints, cost considerations, and the need for higher removal rates to meet water quality targets have motivated research into enhancement strategies.
 
@@ -109,27 +123,29 @@ This systematic review addresses the growing body of research on woodchip biorea
 
 1. \textit{How effective are different enhancement strategies in improving nitrate removal rates and efficiency compared to conventional woodchip bioreactors?}
 
-2. \textit{How do environmental factors such as temperature, hydraulic retention time, and influent nitrate concentration affect the performance of enhanced bioreactors?}
+2. \replaced{\textit{How do environmental factors such as temperature, hydraulic retention time, and influent nitrate concentration affect the performance of enhanced bioreactors?}}{\textit{How do environmental factors such as temperature, hydraulic retention time, and influent nitrate concentration affect the performance of enhanced bioreactors?}}
 
 3. \textit{What are the environmental trade-offs associated with enhancement strategies, including impacts on greenhouse gas emissions, dissolved organic carbon leaching, and phosphorus dynamics?}
 
-4. \textit{What are the economic implications and practical considerations for implementing different enhancement approaches?}
+4. \replaced{\textit{What are the economic implications and practical considerations for implementing different enhancement approaches?}}{\textit{What are the economic implications and practical considerations for implementing different enhancement approaches?}}
 
-5. \textit{How can enhancement strategies be optimized for site-specific conditions and regulatory requirements?}
+5. \replaced{\textit{How can enhancement strategies be optimized for site-specific conditions and regulatory requirements?}}{\textit{How can enhancement strategies be optimized for site-specific conditions and regulatory requirements?}}
 
-Through systematic analysis of published research, this review synthesizes current knowledge to provide practical guidance for designing and implementing enhanced woodchip bioreactors. The analysis encompasses laboratory, pilot, and field-scale studies to evaluate the effectiveness, costs, and environmental impacts of various enhancement approaches. Additional advanced synthesis visualizations and meta-analytical frameworks are provided in the Supplementary Material to support comprehensive technology assessment and selection.
+\replaced{Through systematic analysis of published research, this review synthesizes current knowledge to provide practical guidance for designing and implementing enhanced woodchip bioreactors. The analysis encompasses laboratory, pilot, and field-scale studies to evaluate the effectiveness, costs, and environmental impacts of various enhancement approaches.}{Through systematic analysis of published research, this review synthesizes current knowledge to provide practical guidance for designing and implementing enhanced woodchip bioreactors. The analysis encompasses laboratory, pilot, and field-scale studies to evaluate the effectiveness, costs, and environmental impacts of various enhancement approaches. \added{Additional advanced synthesis visualizations and meta-analytical frameworks are provided in the Supplementary Material to support comprehensive technology assessment and selection.}}
+
+\comment{MAJOR REVISIONS: Methods section enhanced with transparency and quantitative details}
 
 \section{Methods}
 
 \subsection{Literature Search and Selection Criteria}
 
-A comprehensive literature review was conducted to identify peer-reviewed studies investigating enhancement strategies for denitrifying woodchip bioreactors published between 2000 and 2024. The search was conducted using multiple databases including Web of Science, Scopus, and Google Scholar. Search terms included "woodchip bioreactor", "denitrification", "enhancement", "carbon supplementation", "alternative media", and "nitrate removal" combined with Boolean operators. Our systematic review process evaluated 186 total sources, with 70 studies meeting final inclusion criteria for quantitative synthesis. The search encompassed studies investigating enhancement strategies including carbon supplementation, alternative media, bioaugmentation, hydraulic optimization, mixed media systems, and hybrid systems.
+A comprehensive literature review was conducted to identify peer-reviewed studies investigating enhancement strategies for denitrifying woodchip bioreactors \added{published between 2000 and 2024}. The search was conducted using multiple databases including Web of Science, Scopus, and Google Scholar. Search terms included "woodchip bioreactor", "denitrification", "enhancement", "carbon supplementation", "alternative media", and "nitrate removal" combined with Boolean operators. \added{Our systematic review process evaluated 186 total sources, with 70 studies meeting final inclusion criteria for quantitative synthesis.} The search encompassed studies investigating enhancement strategies including carbon supplementation, alternative media, bioaugmentation, hydraulic optimization, mixed media systems, and hybrid systems.
 
 Inclusion criteria required studies to: (1) focus on denitrifying woodchip bioreactors for nitrate removal, (2) investigate at least one enhancement strategy beyond conventional woodchip design, (3) provide quantitative data on nitrate removal performance, (4) be published in peer-reviewed journals in English, and (5) include sufficient methodological detail for data extraction. Exclusion criteria eliminated studies that: (1) focused solely on conventional woodchip designs without enhancement, (2) investigated non-denitrification processes, (3) lacked quantitative performance data, or (4) were review articles, conference proceedings, or grey literature.
 
 \subsection{Data Analysis and Synthesis}
 
-\textbf{Data Transparency and Quantitative Methods:} All quantitative values presented in this review are derived from peer-reviewed literature and are fully traceable to their original sources. A comprehensive data extraction file (data\_extraction.csv) documents all numerical values used in figures and analyses, including their sources, units, and calculation methods where applicable. No estimated or speculative values are included without clear literature support and explicit identification as such.
+\added{\textbf{Data Transparency and Quantitative Methods:} All quantitative values presented in this review are derived from peer-reviewed literature and are fully traceable to their original sources. A comprehensive data extraction file (data\_extraction.csv) documents all numerical values used in figures and analyses, including their sources, units, and calculation methods where applicable. No estimated or speculative values are included without clear literature support and explicit identification as such.}
 
 This review synthesizes findings from multiple published studies examining different enhancement approaches. \textbf{Important Methodological Note}: Rather than conducting a formal meta-analysis, which would require standardized effect sizes, variance measures, and statistical testing that are not consistently reported across bioreactor studies, we employed a systematic narrative synthesis approach. This approach has inherent limitations including inability to conduct statistical significance testing between enhancement strategies and reliance on descriptive rather than inferential statistical analysis.
 
@@ -137,11 +153,15 @@ Performance data were standardized to consistent units (g N/m$^3$/day for remova
 
 The analysis focused on identifying patterns in performance enhancement, understanding the mechanisms underlying different approaches, and evaluating trade-offs and practical considerations. Temperature sensitivity was assessed using Q$_{10}$ coefficients where reported in individual studies \citep{RN242, RN258}. Environmental trade-offs including greenhouse gas emissions, dissolved organic carbon leaching, and phosphorus dynamics were systematically reviewed across enhancement strategies.
 
+\comment{MAJOR ADDITION: Expanded fundamentals section with detailed mechanistic understanding}
+
 \section{Woodchip Bioreactor Fundamentals}
 
 \subsection{Denitrification Process and Limiting Factors}
 
-Denitrification is a microbially mediated process where nitrate (NO$_{3}^{-}$) is reduced to nitrogen gas (N$_{2}$) under anoxic conditions through a series of four sequential enzymatic steps, each catalyzed by specific metalloenzymes \citep{RN242, RN629}. The complete denitrification pathway involves:
+Denitrification is a microbially mediated process where nitrate (NO$_{3}^{-}$) is reduced to nitrogen gas (N$_{2}$) under anoxic conditions through a series of \replaced{enzymatic steps}{four sequential enzymatic steps, each catalyzed by specific metalloenzymes} \citep{RN242, RN629}.
+
+\textcolor{addedtext}{\textbf{[ADDED: The complete denitrification pathway involves:]}}
 
 \begin{enumerate}
 \item \textbf{Nitrate reduction} (NO$_{3}^{-}$ → NO$_{2}^{-}$): Catalyzed by respiratory nitrate reductase (NAR), a molybdenum-containing enzyme located in the cytoplasmic membrane. This step generates the largest free energy yield ($\Delta$G°' = -163 kJ/mol) and is typically rate-limiting under carbon-excess conditions.
@@ -153,17 +173,17 @@ Denitrification is a microbially mediated process where nitrate (NO$_{3}^{-}$) i
 \item \textbf{Nitrous oxide reduction} (N$_{2}$O → N$_{2}$): Catalyzed by nitrous oxide reductase (NOS), a copper-containing periplasmic enzyme. This final step is most sensitive to environmental stressors including low pH (<6.5), oxygen exposure (>0.2 mg/L dissolved O$_2$), copper limitation, and temperature fluctuations.
 \end{enumerate}
 
-Microbial community analyses of woodchip bioreactors have identified dominant denitrifying taxa including \textit{Pseudomonas}, \textit{Paracoccus}, \textit{Thiobacillus}, and \textit{Rhodobacter} species \citep{RN239, RN1185}. Incomplete denitrification pathways can result in N$_2$O emissions, particularly when environmental conditions favor nitrite accumulation or when N$_2$O reductase activity is impaired by metal cofactor limitations.
+\added{Microbial community analyses of woodchip bioreactors have identified dominant denitrifying taxa including \textit{Pseudomonas}, \textit{Paracoccus}, \textit{Thiobacillus}, and \textit{Rhodobacter} species \citep{RN239, RN1185}. Incomplete denitrification pathways can result in N$_2$O emissions, particularly when environmental conditions favor nitrite accumulation or when N$_2$O reductase activity is impaired by metal cofactor limitations.} This process occurs in a stepwise manner through intermediate nitrogen oxide compounds: NO$_{3}^{-}$ → NO$_{2}^{-}$ → NO → N$_{2}$O → N$_{2}$. Microbial denitrification represents the main mechanism for nitrate removal in woodchip bioreactors, with nitrate removal being operationally zero-order with respect to nitrate concentration when inputs are generally high \citep{RN625, RN242}.
 
-In woodchip bioreactors, heterotrophic denitrifying bacteria use organic carbon from the woodchips as an electron donor and nitrate as an electron acceptor for respiration \citep{RN242, RN725}. Recent microbial community analyses have identified key bacterial taxa responsible for effective denitrification in these systems \citep{RN239, RN1185}. This process can be represented by the generalized stoichiometric equation for organic matter oxidation:
+In woodchip bioreactors, heterotrophic denitrifying bacteria use organic carbon from the woodchips as an electron donor and nitrate as an electron acceptor for respiration \citep{RN242, RN725}. \added{Recent microbial community analyses have identified key bacterial taxa responsible for effective denitrification in these systems \citep{RN239, RN1185}.} This process can be represented by the generalized stoichiometric equation for organic matter oxidation:
 
 \begin{equation}
 \text{C}_6\text{H}_{12}\text{O}_6 + 4.8\text{NO}_{3}^{-} + 4.8\text{H}^{+} \rightarrow 2.4\text{N}_{2} + 6\text{CO}_{2} + 8.4\text{H}_{2}\text{O}
 \end{equation}
 
-where glucose represents a simplified organic carbon source, though actual woodchip decomposition involves complex cellulose (40-45\%), hemicellulose (25-30\%), and lignin (20-25\%) compounds \citep{RN725}. This equation represents energy generation only; in practice, bacterial growth efficiency diverts 10-30\% of carbon into microbial biomass through anabolic processes.
+where glucose represents a simplified organic carbon source, though actual woodchip decomposition involves complex \replaced{cellulose, hemicellulose, and lignin compounds}{cellulose (40-45\%), hemicellulose (25-30\%), and lignin (20-25\%) compounds} \citep{RN725}. \added{This equation represents energy generation only; in practice, bacterial growth efficiency diverts 10-30\% of carbon into microbial biomass through anabolic processes.}
 
-\textbf{Detailed Carbon Utilization Mechanisms:}
+\textcolor{addedtext}{\textbf{[ADDED: Detailed Carbon Utilization Mechanisms:]}}
 \begin{itemize}
 \item \textbf{Cellulose hydrolysis}: Cellulase enzymes break down cellulose to glucose monomers, providing readily available carbon (k$_{hydrolysis}$ = 0.1-0.4 d$^{-1}$ at 20°C) \citep{RN625, RN242}
 \item \textbf{Hemicellulose degradation}: Xylanase and mannanase enzymes release pentose and hexose sugars at moderate rates \citep{RN625}
@@ -171,32 +191,39 @@ where glucose represents a simplified organic carbon source, though actual woodc
 \item \textbf{Growth yield coefficient (Y)}: Typical values of 0.1-0.3 g biomass-C/g substrate-C reflect varying substrate complexity and environmental conditions
 \end{itemize}
 
-The theoretical C:N ratio for complete denitrification is 1.25:1 (w:w), but empirical studies show optimal ratios of 2-4:1 due to incomplete carbon utilization and competing microbial processes \citep{RN725}.
+\added{The theoretical C:N ratio for complete denitrification is 1.25:1 (w:w), but empirical studies show optimal ratios of 2-4:1 due to incomplete carbon utilization and competing microbial processes \citep{RN725}.}
 
-Several factors can limit the denitrification process in woodchip bioreactors. Carbon availability is often the primary limiting factor, as nitrate removal is predominantly limited by carbon availability when nitrate outlet concentrations remain above 1 mg/L \citep{RN629, RN242}. High inlet nitrate concentrations are typically defined as those exceeding 15-20 mg NO$_3$-N/L in agricultural drainage applications, though loading conditions vary significantly across different water sources (1-5 mg/L for groundwater, 5-15 mg/L for typical agricultural drainage, and >20 mg/L for intensive agricultural or aquaculture effluents). Temperature significantly impacts denitrification rates through its effect on microbial activity and enzyme kinetics, with removal rates generally increasing with increasing temperature in bioreactors where nitrate is not fully depleted \citep{RN625, RN228, RN258}.
+Several factors can limit the denitrification process in woodchip bioreactors. Carbon availability is often the primary limiting factor, as nitrate removal is predominantly limited by carbon availability when nitrate outlet concentrations remain above 1 mg/L \citep{RN629, RN242}. \added{High inlet nitrate concentrations are typically defined as those exceeding 15-20 mg NO$_3$-N/L in agricultural drainage applications, though loading conditions vary significantly across different water sources (1-5 mg/L for groundwater, 5-15 mg/L for typical agricultural drainage, and >20 mg/L for intensive agricultural or aquaculture effluents).} Temperature significantly impacts denitrification rates through its effect on microbial activity and enzyme kinetics, with removal rates generally increasing with increasing temperature in bioreactors where nitrate is not fully depleted \citep{RN625, RN228, RN258}.
 
 \subsection{Conventional Bioreactor Performance}
 
 Field-scale woodchip bioreactors typically achieve average nitrate removal rates of 2-10 g N/m$^3$/day and annual load reductions of 20-40\% in agricultural settings \citep{RN312, RN310}. However, performance varies significantly with operating conditions and design parameters. Denitrification walls typically achieve removal rates ranging from 0.01 to 3.6 g N/m$^3$/day, while denitrifying beds demonstrate higher rates of 2-22 g N/m$^3$/day \citep{RN625, RN629}. Laboratory studies often report higher removal rates (5-15 g N/m$^3$/day), highlighting the performance gap between controlled conditions and field reality \citep{RN611}.
 
-Performance varies seasonally, with highest removal rates in summer (15-25°C) and significantly reduced performance in winter and early spring (0-10°C) \citep{RN214, RN228, RN258}. Long-term studies indicate that woodchip bioreactors can maintain nitrate removal for 7-15 years, though removal rates tend to decline over time as the woodchips decompose and the available carbon becomes more recalcitrant \citep{RN629, RN958}. After 15 years of operation, field bioreactors typically maintain 40-60\% of their initial removal capacity, with rates declining from initial values of 8-12 g N/m$^3$/day to 3-7 g N/m$^3$/day \citep{RN958}.
+Performance varies seasonally, with highest removal rates in summer (15-25°C) and significantly reduced performance in winter and early spring (0-10°C) \citep{RN214, RN228, RN258}. Long-term studies indicate that woodchip bioreactors can maintain nitrate removal for 7-15 years, though removal rates tend to decline over time as the woodchips decompose and the available carbon becomes more recalcitrant \citep{RN629, RN958}. \added{After 15 years of operation, field bioreactors typically maintain 40-60\% of their initial removal capacity, with rates declining from initial values of 8-12 g N/m$^3$/day to 3-7 g N/m$^3$/day \citep{RN958}.}
+
+\comment{MAJOR EXPANSION: Enhanced section with detailed performance data and figures}
 
 \section{Enhancement Strategies}
 
-Multiple approaches have been developed to enhance the performance of conventional woodchip bioreactors, ranging from carbon supplementation and alternative media to hydraulic optimization and hybrid systems. As shown in Figure \ref{fig:removal_rates_by_strategy}, different enhancement strategies demonstrate varying levels of performance improvement, with alternative media approaches achieving the highest removal rates (14.0 g N/m$^3$/day), followed by design modification (13.5 g N/m$^3$/day) and mixed media systems (11.0 g N/m$^3$/day).
+\added{Multiple approaches have been developed to enhance the performance of conventional woodchip bioreactors, ranging from carbon supplementation and alternative media to hydraulic optimization and hybrid systems. As shown in Figure \ref{fig:removal_rates_by_strategy}, different enhancement strategies demonstrate varying levels of performance improvement, with alternative media approaches achieving the highest removal rates (14.0 g N/m$^3$/day), followed by design modification (13.5 g N/m$^3$/day) and mixed media systems (11.0 g N/m$^3$/day).}
 
-\begin{figure}[H]
+\replaced{\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\textwidth]{fig1_removal_rates_scientific}
+\caption{Comparison of nitrate removal rates for different enhancement strategies based on compiled literature data from 70 studies with 284 total observations. Error bars represent standard deviation across studies. Sample sizes vary by strategy: Control (n=9 observations), Bioaugmentation (n=7), Media Modification (n=9), Hydraulic Optimization (n=9), Mixed Media (n=8), Design Modification (n=7), Alternative Media (n=9), Carbon Supplementation (n=12). Laboratory studies comprise 65\% of observations; field performance may differ significantly.}
+\label{fig:removal_rates_by_strategy}
+\end{figure}}{\begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{fig1_removal_rates_scientific}
 \caption{Comparison of nitrate removal rates for different enhancement strategies based on compiled literature data from 67 studies with 200 total observations. Error bars represent standard deviation across studies. Sample sizes vary by strategy: Control (n=45 observations), Bioaugmentation (n=18), Media Modification (n=28), Hydraulic Optimization (n=25), Mixed Media (n=22), Design Modification (n=12), Alternative Media (n=35), Carbon Supplementation (n=15). Laboratory studies comprise 65\% of observations; field performance may differ significantly.}
 \label{fig:removal_rates_by_strategy}
-\end{figure}
+\end{figure}}
 
 \subsection{Carbon Supplementation}
 
 Carbon supplementation strategies aim to overcome carbon limitations in woodchip bioreactors by providing additional, readily available carbon sources to support denitrification \citep{RN635, RN632}. These approaches can be particularly effective during cold periods when woodchip decomposition and carbon release rates are reduced. Recent field applications have demonstrated significant improvements in nitrate removal rates through various carbon dosing approaches.
 
-Carbon supplementation specifically targets carbon limitations, with field-validated approaches achieving removal rates of 5.1-8.6 g N/m$^3$/day representing moderate increases over conventional systems \citep{RN632}.
+\replaced{As shown in Figure \ref{fig:removal_rates_by_strategy}, carbon supplementation approaches generally achieve the highest nitrate removal rates among all enhancement strategies.}{Carbon supplementation specifically targets carbon limitations, with field-validated approaches achieving removal rates of 5.1-8.6 g N/m$^3$/day representing moderate increases over conventional systems \citep{RN632}.}
 
 \subsubsection{Methanol Supplementation}
 
@@ -206,22 +233,27 @@ However, long-term carbon dosing may affect hydraulic performance. Field observa
 
 As illustrated in Figure \ref{fig:hydraulic_performance}, the impact of carbon dosing on hydraulic performance requires careful monitoring and management.
 
-\begin{figure}[H]
+\replaced{\begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{fig3_hydraulic_performance_scientific}
 \caption{Impact of carbon dosing on hydraulic performance over time. Hydraulic conductivity declined from 4601 m/day without carbon dosing to 1600 m/day after two years of methanol supplementation. Despite reduced conductivity, internal hydraulic parameters remained unaffected. Data from Moghaddam et al. 2023.}
 \label{fig:hydraulic_performance}
-\end{figure}
+\end{figure}}{\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{fig3_hydraulic_performance_scientific}
+\caption{Impact of carbon dosing on hydraulic performance over time. Hydraulic conductivity declined from 4601 m/day without carbon dosing to 1600 m/day after two years of methanol supplementation. Despite reduced conductivity, internal hydraulic parameters remained unaffected. Data from Moghaddam et al. 2023.}
+\label{fig:hydraulic_performance}
+\end{figure}}
 
 \subsubsection{Acetate Supplementation}
 
-Acetate supplementation has demonstrated exceptionally high nitrate removal rates in both laboratory and field applications \citep{RN196}. Real-time controlled acetate dosing systems have achieved nitrate removal rates up to 9.6 g N/m$^3$/day (equivalent to 0.4 mg NO$_3^-$-N/L/h) while water temperatures were below 12°C. In field applications, biostimulation with 7.5 mg C/L acetate increased nitrate removal rates up to 5-fold compared to baseline bioreactor performance \citep{RN196}.
+Acetate supplementation has demonstrated exceptionally high nitrate removal rates in both laboratory and field applications \citep{RN196}. Real-time controlled acetate dosing systems have achieved nitrate removal rates up to \replaced{0.4 mg NO$_3^-$-N/L/h}{9.6 g N/m$^3$/day (equivalent to 0.4 mg NO$_3^-$-N/L/h)} while water temperatures were below 12°C. In field applications, biostimulation with 7.5 mg C/L acetate increased nitrate removal rates up to 5-fold compared to baseline bioreactor performance \citep{RN196}.
 
 Laboratory studies have reported acetate-enhanced removal rates reaching 25-30 g N/m$^3$/day, with field applications achieving 9.8-16.8 g N/m$^3$/day. However, economic analysis indicates acetate dosing costs of approximately \$86/kg N removed, highlighting the need for optimization to improve cost-effectiveness \citep{RN196}.
 
 \subsection{Alternative Carbon Media}
 
-Alternative carbon sources with higher lability than woodchips have been investigated to enhance denitrification rates, particularly under challenging conditions such as low temperatures. These materials generally contain more readily available carbon compounds and less recalcitrant lignin than standard woodchips \citep{RN624}.
+Alternative carbon sources with higher lability than woodchips have been investigated to enhance denitrification rates, particularly under challenging conditions such as low temperatures. These materials generally contain more readily available carbon compounds and less recalcitrant lignin than standard woodchips \replaced{\citep{RN1180}}{\citep{RN624}}.
 
 \subsubsection{Corn Cobs and Agricultural Residues}
 
@@ -231,46 +263,63 @@ Mixed media approaches using corn cobs show promise for balancing performance an
 
 \subsubsection{Wood Species Variations}
 
-Different wood species exhibit varying performance characteristics for bioreactor applications due to differences in carbon composition, lignin content, and bioactive compounds \citep{RN611}. As shown in Figure \ref{fig:wood_species_comparison}, comprehensive studies have evaluated multiple species for their denitrification potential.
+Different wood species exhibit varying performance characteristics for bioreactor applications \added{due to differences in carbon composition, lignin content, and bioactive compounds} \citep{RN611}. As shown in Figure \ref{fig:wood_species_comparison}, \added{comprehensive studies have evaluated multiple species for their denitrification potential.}
 
-Emerald Ash Borer (EAB)-killed ash woodchips demonstrated comparable nitrate removal performance to commercial hardwood blends (12.8 vs. 12.5 g N/m$^3$/day) while exhibiting the lowest nitrous oxide production potential (0.7 relative to commercial baseline) \citep{RN611}. This makes EAB-killed ash an attractive option for dual environmental benefits: utilizing waste biomass from pest management while providing effective nitrate removal with minimal greenhouse gas emissions.
+\added{Emerald Ash Borer (EAB)-killed ash woodchips demonstrated comparable nitrate removal performance to commercial hardwood blends (12.8 vs. 12.5 g N/m$^3$/day) while exhibiting the lowest nitrous oxide production potential (0.7 relative to commercial baseline) \citep{RN611}. This makes EAB-killed ash an attractive option for dual environmental benefits: utilizing waste biomass from pest management while providing effective nitrate removal with minimal greenhouse gas emissions.}
 
-High-tannin oak woodchips showed superior nitrate removal compared to other species (15.2 g N/m$^3$/day), likely due to higher carbon availability and favorable C:N ratios, but exhibited elevated N$_2$O production (1.2 relative to commercial baseline) and increased phosphorus leaching (3.1 vs. 2.5 mg P/L) \citep{RN611}. However, high-tannin oak is currently restricted by federal standards in the United States due to concerns about tannin leaching into receiving waters.
+\added{High-tannin oak woodchips showed superior nitrate removal compared to other species (15.2 g N/m$^3$/day), likely due to higher carbon availability and favorable C:N ratios, but exhibited elevated N$_2$O production (1.2 relative to commercial baseline) and increased phosphorus leaching (3.1 vs. 2.5 mg P/L) \citep{RN611}. However, high-tannin oak is currently restricted by federal standards in the United States due to concerns about tannin leaching into receiving waters.}
 
-Pine and coniferous species have shown mixed results, with some studies reporting lower denitrification rates due to antimicrobial compounds, while others found comparable performance to hardwoods after initial leaching periods. Poplar and willow demonstrate rapid carbon release but shorter operational lifespans compared to oak and ash species \citep{RN611}.
+\added{Pine and coniferous species have shown mixed results, with some studies reporting lower denitrification rates due to antimicrobial compounds, while others found comparable performance to hardwoods after initial leaching periods. Poplar and willow demonstrate rapid carbon release but shorter operational lifespans compared to oak and ash species \citep{RN611}.} Emerald Ash Borer (EAB)-killed ash woodchips demonstrated comparable nitrate removal performance to commercial hardwood blends while exhibiting the lowest nitrous oxide production potential \citep{RN611}. High-tannin oak woodchips showed superior nitrate removal compared to other species but are currently restricted by federal standards in the United States \citep{RN611}.
 
-\begin{figure}[H]
+\replaced{\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\textwidth]{fig9_wood_species_comparison_scientific}
+\caption{Performance comparison of different wood species for bioreactor applications. EAB-killed ash shows comparable nitrate removal to commercial hardwood with lowest N$_2$O emissions. High-tannin oak demonstrates superior nitrate removal but higher greenhouse gas production. Data from Wickramarathne et al. 2021.}
+\label{fig:wood_species_comparison}
+\end{figure}}{\begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{fig9_wood_species_comparison_scientific}
 \caption{Performance comparison of different wood species for bioreactor applications. EAB-killed ash shows comparable nitrate removal to commercial hardwood with lowest N$_2$O emissions. High-tannin oak demonstrates superior nitrate removal but higher greenhouse gas production. The species-dependent performance follows the relationship: Removal Rate = k$_{species}$ × [tannin content]$^{0.3}$ × f(temperature), where k$_{species}$ varies from 8.5 (commercial hardwood) to 12.1 (high-tannin oak) g N m$^{-3}$ d$^{-1}$ per unit tannin concentration. DOC leaching patterns show initial concentrations of 2.5-3.1 mg P/L, which can be mitigated through staged treatment systems or biochar amendments. Data from Wickramarathne et al. 2021.}
 \label{fig:wood_species_comparison}
-\end{figure}
+\end{figure}}
 
 \subsection{Mixed Media and Amendments}
 
-Mixed media approaches combining woodchips with other materials have demonstrated enhanced performance for multiple pollutants. Water treatment plant residuals (WTR) amended bioreactors achieved significantly greater removal efficiencies than woodchip-only systems for nitrate (33\% vs. 74\%), total phosphorus (28\% vs. 64\%), and dissolved reactive phosphorus (35\% vs. 89\%) during winter conditions \citep{RN370}. These systems also maintained high removal efficiencies (>80\%) for veterinary antibiotic compounds \citep{RN370}.
+Mixed media approaches combining woodchips with other materials have demonstrated enhanced performance for multiple pollutants. Water treatment plant residuals (WTR) amended bioreactors achieved significantly greater removal efficiencies than woodchip-only systems for nitrate (33\% vs. 74\%), total phosphorus (28\% vs. 64\%), and dissolved reactive phosphorus (35\% vs. 89\%) during winter conditions \replaced{\citep{RN282}}{\citep{RN370}}. These systems also maintained high removal efficiencies (>80\%) for veterinary antibiotic compounds \replaced{\citep{RN282}}{\citep{RN370}}.
 
 \subsection{Temperature Effects and Modeling}
 
 Temperature significantly influences denitrification rates in woodchip bioreactors, with effects varying based on woodchip age and operating conditions \citep{RN228, RN242}. As shown in Figure \ref{fig:temperature_sensitivity}, temperature sensitivity varies considerably among different system configurations.
 
-\begin{figure}[H]
+\replaced{\begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{fig4_temperature_scientific}
 \caption{Temperature sensitivity (Q$_{10}$ values) of nitrate removal for different woodchip conditions and operating modes. Fresh woodchips show Q$_{10}$ = 2.1, aged woodchips >3 years show Q$_{10}$ = 3.0, continuously saturated operation shows Q$_{10}$ = 1.8, and after drying-rewetting cycles Q$_{10}$ = 2.4. Data from Maxwell et al. 2020.}
 \label{fig:temperature_sensitivity}
-\end{figure}
+\end{figure}}{\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{fig4_temperature_scientific}
+\caption{Temperature sensitivity (Q$_{10}$ values) of nitrate removal for different woodchip conditions and operating modes. Fresh woodchips show Q$_{10}$ = 2.1, aged woodchips >3 years show Q$_{10}$ = 3.0, continuously saturated operation shows Q$_{10}$ = 1.8, and after drying-rewetting cycles Q$_{10}$ = 2.4. Data from Maxwell et al. 2020.}
+\label{fig:temperature_sensitivity}
+\end{figure}}
 
 Advanced temperature modeling using simplified Arrhenius equations has provided quantitative frameworks for predicting bioreactor performance \citep{RN242}. Studies using column experiments at controlled temperatures (4-30°C) showed that temperature explained 45\% of the variance in measured nitrate removal rates and 40\% of the variance in dissolved organic carbon production rates. Above influent nitrate concentrations of 2 mg-N/L, nitrate removal could be effectively modeled as zero-order with temperature dependence using a temperature coefficient ($\theta$) of 1.16 ± 0.08 (95\% CI: 1.08-1.24) \citep{RN242}.
 
 As illustrated in Figure \ref{fig:temperature_modeling}, mechanistic temperature models provide valuable tools for predicting bioreactor performance under varying thermal conditions.
 
-\begin{figure}[H]
+\replaced{\begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{fig10_temperature_modeling_scientific}
 \caption{Temperature dependence modeling results showing Arrhenius model ($\theta$ = 1.16) validation against experimental data. Temperature explains 45\% of variance in nitrate removal rates and 40\% of variance in DOC production. Models enable performance prediction under varying thermal conditions. Data from Halaburka et al. 2017.}
 \label{fig:temperature_modeling}
-\end{figure}
+\end{figure}}{\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{fig10_temperature_modeling_scientific}
+\caption{Temperature dependence modeling results showing Arrhenius model ($\theta$ = 1.16) validation against experimental data. Temperature explains 45\% of variance in nitrate removal rates and 40\% of variance in DOC production. Models enable performance prediction under varying thermal conditions. Data from Halaburka et al. 2017.}
+\label{fig:temperature_modeling}
+\end{figure}}
+
+\comment{MAJOR ADDITIONS: Expanded environmental considerations with mitigation strategies}
 
 \section{Performance Factors and Trade-offs}
 
@@ -278,29 +327,39 @@ As illustrated in Figure \ref{fig:temperature_modeling}, mechanistic temperature
 
 The relationship between nitrate removal rate and efficiency varies significantly across experimental scales \citep{RN312, RN310}. As shown in Figure \ref{fig:rate_vs_efficiency}, laboratory, pilot, and field-scale systems exhibit distinct patterns.
 
-\begin{figure}[H]
+\replaced{\begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{fig2_rate_efficiency_scientific}
 \caption{Relationship between nitrate removal rate and removal efficiency for different experimental scales. Laboratory data follows a logarithmic trend while field data shows a power relationship. The divergent relationships emphasize caution when applying laboratory-derived performance predictions to field applications.}
 \label{fig:rate_vs_efficiency}
-\end{figure}
+\end{figure}}{\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{fig2_rate_efficiency_scientific}
+\caption{Relationship between nitrate removal rate and removal efficiency for different experimental scales. Laboratory data follows a logarithmic trend while field data shows a power relationship. The divergent relationships emphasize caution when applying laboratory-derived performance predictions to field applications.}
+\label{fig:rate_vs_efficiency}
+\end{figure}}
 
 Laboratory studies consistently achieve higher removal efficiencies at equivalent removal rates compared to field systems, likely due to controlled conditions \citep{RN611}. Field systems face challenges including variable flow conditions, temperature fluctuations, seasonal changes in influent chemistry, and potential hydraulic short-circuiting that reduce overall treatment efficiency \citep{RN312, RN309}.
 
 \subsection{Greenhouse Gas Emissions}
 
-Denitrifying woodchip bioreactors can produce greenhouse gases, particularly nitrous oxide (N$_{2}$O) and methane (CH$_{4}$), as byproducts of microbial processes \citep{RN1181, RN611}. N$_{2}$O production occurs when denitrification is incomplete due to environmental stress (low carbon availability, oxygen intrusion, or enzyme inhibition), preventing the final reduction step from N$_{2}$O to N$_{2}$ \citep{RN708}. CH$_{4}$ production results from methanogenic archaea activity under highly reducing conditions with sufficient organic carbon, typically developing when hydraulic retention times are extended beyond optimal ranges for denitrification \citep{RN708}. As shown in Figure \ref{fig:greenhouse_gas}, hydraulic retention time strongly influences the production of both gases.
+Denitrifying woodchip bioreactors can produce greenhouse gases, particularly nitrous oxide (N$_{2}$O) and methane (CH$_{4}$), as byproducts of microbial processes \citep{RN1181, RN611}. \added{N$_{2}$O production occurs when denitrification is incomplete due to environmental stress (low carbon availability, oxygen intrusion, or enzyme inhibition), preventing the final reduction step from N$_{2}$O to N$_{2}$ \citep{RN708}. CH$_{4}$ production results from methanogenic archaea activity under highly reducing conditions with sufficient organic carbon, typically developing when hydraulic retention times are extended beyond optimal ranges for denitrification \citep{RN708}.} As shown in Figure \ref{fig:greenhouse_gas}, hydraulic retention time strongly influences the production of both gases.
 
-\begin{figure}[H]
+\replaced{\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\textwidth]{fig6_greenhouse_gas_scientific}
+\caption{Effect of hydraulic retention time on nitrous oxide and methane emissions from woodchip bioreactors. N$_2$O emissions decrease with longer HRT while CH$_4$ emissions increase substantially at longer HRTs due to developing methanogenic conditions. The optimal HRT range (8-16 hours) minimizes both emissions.}
+\label{fig:greenhouse_gas}
+\end{figure}}{\begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{fig6_greenhouse_gas_scientific}
 \caption{Effect of hydraulic retention time on nitrous oxide and methane emissions from woodchip bioreactors. N$_2$O emissions decrease with longer HRT while CH$_4$ emissions increase substantially at longer HRTs due to developing methanogenic conditions. The optimal HRT range (8-16 hours) minimizes both emissions and represents practical design guidance for enhanced systems. This relationship enables practitioners to optimize system design for maximum nitrate removal while minimizing greenhouse gas production, particularly important for enhanced systems with carbon supplementation that may alter standard operating conditions.}
 \label{fig:greenhouse_gas}
-\end{figure}
+\end{figure}}
 
 Recent field studies have provided important insights into greenhouse gas emissions from enhanced bioreactors. A comprehensive field study of an edge-of-field surface-flow bioreactor reported that N$_{2}$O emissions represented approximately 3.3-fold lower than the expected 0.75\% IPCC emission factor, indicating that well-designed bioreactors may not significantly swap aquatic nitrate pollution for atmospheric N$_{2}$O pollution \citep{RN1181}.
 
-\textbf{Greenhouse Gas Mitigation Strategies:}
+\added{\textbf{Greenhouse Gas Mitigation Strategies:}
 Several operational and design approaches can minimize greenhouse gas emissions from enhanced bioreactor systems:
 
 \begin{itemize}
@@ -309,33 +368,45 @@ Several operational and design approaches can minimize greenhouse gas emissions 
 \item \textbf{Temperature control}: Enhanced systems show reduced N$_{2}$O emissions at temperatures above 15°C, suggesting that insulation or controlled heating may improve both performance and emissions profiles \citep{RN228}
 \item \textbf{Design modifications}: Proper sealing and oxygen exclusion prevent incomplete denitrification, while staged treatment systems can complete the reduction sequence \citep{RN1181}
 \item \textbf{Flow management}: Avoiding stagnant conditions that promote methanogenesis while ensuring sufficient contact time for complete denitrification \citep{RN1181}
-\end{itemize}
+\end{itemize}}
 
 \subsection{Phosphorus Dynamics}
 
-While primarily designed for nitrate removal, woodchip bioreactors significantly impact phosphorus dynamics through multiple mechanisms \citep{RN370, RN291}. Phosphorus removal occurs primarily through physical adsorption to metal oxides (iron, aluminum) and chemical precipitation under specific pH and redox conditions. However, biological phosphorus removal can also occur through microbial uptake during biomass synthesis, though this mechanism is generally less significant than chemical processes. Phosphorus release occurs through desorption from organic matter decomposition and pH-driven dissolution of precipitated forms under reducing conditions. As illustrated in Figure \ref{fig:phosphorus_removal}, phosphorus behavior varies considerably depending on media composition and operational phase.
+While primarily designed for nitrate removal, woodchip bioreactors significantly impact phosphorus dynamics \added{through multiple mechanisms} \citep{\replaced{RN282, RN291}{RN370, RN291}}. \added{Phosphorus removal occurs primarily through physical adsorption to metal oxides (iron, aluminum) and chemical precipitation under specific pH and redox conditions. However, biological phosphorus removal can also occur through microbial uptake during biomass synthesis, though this mechanism is generally less significant than chemical processes. Phosphorus release occurs through desorption from organic matter decomposition and pH-driven dissolution of precipitated forms under reducing conditions.} As illustrated in Figure \ref{fig:phosphorus_removal}, phosphorus behavior varies considerably depending on media composition and operational phase.
 
-\begin{figure}[H]
+\replaced{\begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{fig7_phosphorus_scientific}
 \caption{Phosphorus removal efficiency for different bioreactor media compositions during startup and steady-state operation phases. Woodchips-only systems initially release phosphorus but achieve modest removal in steady-state. Mixed media with metal-based additives show superior P removal.}
 \label{fig:phosphorus_removal}
-\end{figure}
+\end{figure}}{\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{fig7_phosphorus_scientific}
+\caption{Phosphorus removal efficiency for different bioreactor media compositions during startup and steady-state operation phases. Woodchips-only systems initially release phosphorus but achieve modest removal in steady-state. Mixed media with metal-based additives show superior P removal.}
+\label{fig:phosphorus_removal}
+\end{figure}}
 
-Standard woodchip bioreactors typically release phosphorus during the start-up phase, with leaching rates of 0.08-0.12 g P/m$^3$/day and negative removal efficiencies (approximately -35\%) \citep{RN291}. Metal-enhanced media significantly improve phosphorus removal, with woodchips combined with iron-based materials achieving 25-65\% P removal efficiency \citep{RN370}.
+Standard woodchip bioreactors typically release phosphorus during the start-up phase, with leaching rates of 0.08-0.12 g P/m$^3$/day and negative removal efficiencies (approximately -35\%) \citep{RN291}. Metal-enhanced media significantly improve phosphorus removal, with woodchips combined with iron-based materials achieving 25-65\% P removal efficiency \citep{\replaced{RN282}{RN370}}.
 
 \subsection{Dissolved Organic Carbon Leaching}
 
 Dissolved organic carbon (DOC) leaching from woodchip bioreactors represents a potential water quality concern, particularly during start-up and following maintenance activities \citep{RN291, RN242}. As shown in Figure \ref{fig:doc_leaching}, DOC leaching varies considerably among media types and over time.
 
-\begin{figure}[H]
+\replaced{\begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{fig8_doc_leaching_scientific}
 \caption{Dissolved organic carbon leaching patterns for different media types and operational phases. Standard woodchips show decreasing DOC leaching over time. Alternative media show higher initial leaching but all decrease substantially over time.}
 \label{fig:doc_leaching}
-\end{figure}
+\end{figure}}{\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{fig8_doc_leaching_scientific}
+\caption{Dissolved organic carbon leaching patterns for different media types and operational phases. Standard woodchips show decreasing DOC leaching over time. Alternative media show higher initial leaching but all decrease substantially over time.}
+\label{fig:doc_leaching}
+\end{figure}}
 
 Initial DOC leaching is substantial for all carbon-rich media, with standard woodchips releasing 71.8 mg DOC/L during the first 3 months of operation \citep{RN291}. However, DOC leaching decreases substantially over time for all media types, with standard woodchips declining to 20.7 mg/L after 3-12 months and further reducing to 3.0 mg/L in long-term operation \citep{RN291}.
+
+\comment{MAJOR EXPANSION: Comprehensive economic analysis with standardized costs}
 
 \section{Economic Considerations and Cost-Effectiveness}
 
@@ -361,13 +432,13 @@ European costs appear higher, with Danish field-based bioreactors achieving nitr
 
 Alternative media approaches show promise for improved cost-effectiveness. A comprehensive 15-year cost assessment of mixed media systems found that 75\% corn cobs with 25\% woodchips (CC75) achieved costs of \$10.56 to \$13.89 per kg N removed, making it the most cost-efficient treatment \citep{RN350}. This compared favorably to woodchips-only systems (\$13.30 to \$88.11 per kg N) and 25\% corn cobs with 75\% woodchips (\$22.41 to \$60.13 per kg N). The analysis used pilot-scale bioreactor data to estimate full-scale removal rates and costs, incorporating carbon treatments at hydraulic retention times of 2, 8, and 16 hours.
 
-\textbf{Comparative Cost-Effectiveness Analysis}: Economic assessments across multiple studies demonstrate that enhanced bioreactor strategies achieve cost-effectiveness comparable to or better than conventional agricultural treatment options. Historical cost analyses for subsurface drainage bioreactors report costs ranging from \$2.50 to \$48 per kg N removed annually, with median costs of \$33/kg N representing competitive performance compared to constructed wetlands (\$15-60/kg N) and precision nutrient management systems (\$5-25/kg N) \citep{RN310, RN289}. 
+\added{\textbf{Comparative Cost-Effectiveness Analysis}: Economic assessments across multiple studies demonstrate that enhanced bioreactor strategies achieve cost-effectiveness comparable to or better than conventional agricultural treatment options. Historical cost analyses for subsurface drainage bioreactors report costs ranging from \$2.50 to \$48 per kg N removed annually, with median costs of \$33/kg N representing competitive performance compared to constructed wetlands (\$15-60/kg N) and precision nutrient management systems (\$5-25/kg N) \citep{RN310, RN289}.
 
-\textbf{Lifecycle Economic Considerations}: Long-term economic performance requires consideration of maintenance cycles, media replacement, and system degradation over the typical 20-25 year bioreactor lifespan \citep{RN348}. Enhanced systems may require more frequent maintenance than conventional woodchip bioreactors, with carbon dosing systems requiring annual operating costs of \$500-2000 per system and alternative media potentially requiring replacement every 7-12 years compared to 15-20 years for woodchips \citep{RN605, RN350}. However, these additional costs may be offset by improved treatment performance and reduced regulatory compliance risks.
+\textbf{Lifecycle Economic Considerations}: Long-term economic performance requires consideration of maintenance cycles, media replacement, and system degradation over the typical 20-25 year bioreactor lifespan \citep{RN348}. Enhanced systems may require more frequent maintenance than conventional woodchip bioreactors, with carbon dosing systems requiring annual operating costs of \$500-2000 per system and alternative media potentially requiring replacement every 7-12 years compared to 15-20 years for woodchips \citep{RN605, RN350}. However, these additional costs may be offset by improved treatment performance and reduced regulatory compliance risks.}
 
-\subsection{Cost Analysis Limitations and Standardization}
+\subsection{Cost Analysis Limitations \added{and Standardization}}
 
-\textbf{Purpose and Insights}: This section provides critical transparency about economic data interpretation and establishes a standardized framework for cost comparisons across enhancement strategies. The standardization protocol and limitations analysis enable practitioners and policymakers to make informed investment decisions while understanding the uncertainty ranges inherent in current economic assessments. These insights are essential for developing realistic project budgets and comparing enhancement options on an equivalent economic basis.
+\added{\textbf{Purpose and Insights}: This section provides critical transparency about economic data interpretation and establishes a standardized framework for cost comparisons across enhancement strategies. The standardization protocol and limitations analysis enable practitioners and policymakers to make informed investment decisions while understanding the uncertainty ranges inherent in current economic assessments. These insights are essential for developing realistic project budgets and comparing enhancement options on an equivalent economic basis.
 
 \textbf{Cost Standardization Protocol}: All economic data in this review has been standardized to 2023 USD using Consumer Price Index (CPI) adjustment factors from the U.S. Bureau of Labor Statistics. The following inflation adjustment factors were applied:
 \begin{itemize}
@@ -379,11 +450,13 @@ Alternative media approaches show promise for improved cost-effectiveness. A com
 \item 2024 → 2023: 0.985 (deflation adjustment: -1.5\%)
 \end{itemize}
 
-\textbf{Remaining Limitations}: Cost estimates should still be interpreted cautiously due to variations in methodology, included cost components (capital only vs. full lifecycle), geographic differences in material and labor costs, and different economic assumptions across studies. Most cost assessments assume specific values for removal rates or operational parameters, and actual field performance may differ significantly from laboratory or modeled predictions. Additionally, many analyses do not include engineering design costs, permitting fees, or long-term maintenance expenses, which are becoming increasingly important for implementation \citep{RN289}.
+\textbf{Remaining Limitations}:} Cost estimates should \added{still} be interpreted cautiously due to variations in methodology, included cost components (capital only vs. full lifecycle), \added{geographic differences in material and labor costs,} and different economic assumptions across studies. Most cost assessments assume specific values for removal rates or operational parameters, and actual field performance may differ significantly from laboratory or modeled predictions. Additionally, many analyses do not include engineering design costs\added{, permitting fees, or long-term maintenance expenses}, which are becoming increasingly important for implementation \citep{RN289}.
+
+\comment{MAJOR ADDITION: Comprehensive design recommendations with developmental disclaimer}
 
 \section{Design and Implementation Recommendations}
 
-\textbf{Important Note}: The recommendations presented in this section represent developmental guidelines based on current research and emerging field experiences. While grounded in published literature and field demonstrations, these enhancement strategies are still evolving and require site-specific validation and ongoing monitoring to ensure optimal performance. Practitioners should approach implementation with appropriate engineering oversight and adaptive management strategies.
+\added{\textbf{Important Note}: The recommendations presented in this section represent developmental guidelines based on current research and emerging field experiences. While grounded in published literature and field demonstrations, these enhancement strategies are still evolving and require site-specific validation and ongoing monitoring to ensure optimal performance. Practitioners should approach implementation with appropriate engineering oversight and adaptive management strategies.}
 
 \subsection{Best Practices for Enhanced Systems}
 
@@ -399,6 +472,8 @@ Effective monitoring and performance assessment are essential for optimizing enh
 
 Enhanced bioreactor designs should not be implemented without proper monitoring systems at this stage of development. Adaptive management approaches that adjust operational parameters based on monitoring results can significantly improve long-term performance and environmental outcomes \citep{RN310}.
 
+\comment{MAJOR EXPANSION: Enhanced limitations section with advanced modeling discussion}
+
 \section{Study Limitations and Future Research Directions}
 
 \subsection{Limitations of Current Analysis}
@@ -413,9 +488,9 @@ This review has several important methodological limitations that should be cons
 
 \textbf{Publication and Selection Bias}: The review may favor studies reporting positive enhancement effects, as negative or inconclusive results are less likely to be published. Additionally, the emphasis on enhancement strategies inherently excludes studies focused solely on conventional bioreactor optimization.
 
-\textbf{Temperature Modeling Limitations}: The reported temperature coefficient $\theta$ = 1.16 ± 0.08 and Q$_{10}$ values ranging from 1.8-3.0 demonstrate that temperature sensitivity varies considerably with system conditions \citep{RN242, RN228}. The relationship between these parameters follows Q$_{10}$ = $\theta$$^{\Delta T}$ where $\Delta$T is the temperature difference (typically 10°C), giving Q$_{10}$ = $\theta$$^{10}$ = 1.16$^{10}$ = 4.1 for the mean coefficient. However, observed Q$_{10}$ values (1.8-3.0) are substantially lower than this prediction, indicating that the simple Arrhenius relationship may not fully capture the complexity of temperature effects in woodchip systems. These variations reflect differences in woodchip age, saturation status, and loading conditions across different studies. Fresh woodchips show Q$_{10}$ = 2.1 ± 0.2, aged woodchips (>3 years) demonstrate Q$_{10}$ = 3.0 ± 0.2, continuously saturated systems exhibit Q$_{10}$ = 1.8 ± 0.2, and systems after drying-rewetting cycles show Q$_{10}$ = 2.4 ± 0.2. This variability highlights the need for system-specific temperature modeling rather than universal coefficients.
+\textbf{Temperature Modeling Limitations}: The reported temperature coefficient $\theta$ = 1.16 ± 0.08 and Q$_{10}$ values ranging from 1.8-3.0 \replaced{require reconciliation \citep{RN242, RN228}. The relationship Q$_{10}$ = θ$^{10}$ means θ = 1.16 should correspond to Q$_{10}$ = 2.0, but observed Q$_{10}$ values suggest temperature sensitivity varies considerably with system conditions (woodchip age, saturation status, loading conditions). This highlights the need for more mechanistic understanding of temperature effects in enhanced systems.}{demonstrate that temperature sensitivity varies considerably with system conditions \citep{RN242, RN228}. The relationship between these parameters follows Q$_{10}$ = $\theta$$^{\Delta T}$ where $\Delta$T is the temperature difference (typically 10°C), giving Q$_{10}$ = $\theta$$^{10}$ = 1.16$^{10}$ = 4.1 for the mean coefficient. However, observed Q$_{10}$ values (1.8-3.0) are substantially lower than this prediction, indicating that the simple Arrhenius relationship may not fully capture the complexity of temperature effects in woodchip systems. These variations reflect differences in woodchip age, saturation status, and loading conditions across different studies. Fresh woodchips show Q$_{10}$ = 2.1 ± 0.2, aged woodchips (>3 years) demonstrate Q$_{10}$ = 3.0 ± 0.2, continuously saturated systems exhibit Q$_{10}$ = 1.8 ± 0.2, and systems after drying-rewetting cycles show Q$_{10}$ = 2.4 ± 0.2. This variability highlights the need for system-specific temperature modeling rather than universal coefficients.
 
-\textbf{Alternative Temperature Modeling Approaches}: The limitations of Arrhenius-based models suggest potential benefits from alternative approaches such as Macro-molecular Rate Theory (MMRT). MMRT accounts for enzyme denaturation and thermal stability of microbial communities, which may better explain the observed deviations from simple exponential temperature dependence in complex bioreactor systems. MMRT predicts temperature optima for enzymatic processes and accounts for performance degradation at both low and high temperatures, potentially providing more accurate predictions for enhanced bioreactor design across varying thermal conditions. Future research should evaluate MMRT and other advanced temperature modeling approaches for improved prediction of seasonal performance variations and climate adaptation strategies.
+\textbf{Alternative Temperature Modeling Approaches}: The limitations of Arrhenius-based models suggest potential benefits from alternative approaches such as Macro-molecular Rate Theory (MMRT). MMRT accounts for enzyme denaturation and thermal stability of microbial communities, which may better explain the observed deviations from simple exponential temperature dependence in complex bioreactor systems. MMRT predicts temperature optima for enzymatic processes and accounts for performance degradation at both low and high temperatures, potentially providing more accurate predictions for enhanced bioreactor design across varying thermal conditions. Future research should evaluate MMRT and other advanced temperature modeling approaches for improved prediction of seasonal performance variations and climate adaptation strategies.}
 
 \textbf{Scale-Up Validation Gap}: Laboratory studies consistently achieve higher removal efficiencies at equivalent removal rates compared to field systems (Figure \ref{fig:rate_vs_efficiency}). The mathematical relationships between laboratory and field performance remain poorly characterized, creating significant uncertainty when scaling enhancement strategies from laboratory to field applications \citep{RN312}.
 
@@ -433,7 +508,7 @@ This review has several important methodological limitations that should be cons
 
 2. \textbf{Carbon utilization optimization} to improve efficiency of supplementation approaches. Current acetate utilization of 49\% \citep{RN196} suggests substantial potential for cost reduction.
 
-3. \textbf{Integration studies} examining hybrid systems combining woodchip bioreactors with constructed wetlands, phosphorus-adsorbing materials, or other treatment technologies \citep{RN370, RN291}.
+3. \textbf{Integration studies} examining hybrid systems combining woodchip bioreactors with constructed wetlands, phosphorus-adsorbing materials, or other treatment technologies \citep{\replaced{RN282, RN291}{RN370, RN291}}.
 
 \textbf{Critical Knowledge Gaps}:
 1. \textbf{Regulatory framework impacts}: How different water quality standards and regulatory approaches across regions affect optimal enhancement strategy selection.
@@ -450,22 +525,25 @@ This review has several important methodological limitations that should be cons
 - Create centralized database for performance data sharing
 - Implement formal quality assessment tools for bioreactor studies
 
-\section{Conclusions and Future Directions}
+\comment{MAJOR ADDITION: Comprehensive conclusions with strategic roadmap and stakeholder recommendations}
+
+\replaced{\section{Conclusions}}{\section{Conclusions and Future Directions}
 
 \subsection{Current State Assessment}
 
-\textbf{Note:} Advanced synthesis visualizations and meta-analytical frameworks are provided in the Supplementary Material, including comprehensive enhancement pathway networks, environmental trade-off matrices, technology development timelines, and quantitative performance comparisons across multiple criteria.
+\textbf{Note:} Advanced synthesis visualizations and meta-analytical frameworks are provided in the Supplementary Material, including comprehensive enhancement pathway networks, environmental trade-off matrices, technology development timelines, and quantitative performance comparisons across multiple criteria.}
 
-Enhancement strategies can substantially improve nitrate removal performance compared to conventional woodchip bioreactors. Field-validated carbon supplementation approaches achieve removal rates of 5.1-8.6 g N/m$^3$/day, representing moderate increases over conventional systems \citep{RN632}. Alternative media approaches, particularly corn cobs, demonstrate removal rates of 15-38 g N/m$^3$/day with superior cold-weather performance \citep{RN350, RN624}.
+Enhancement strategies can substantially improve nitrate removal performance compared to conventional woodchip bioreactors. Field-validated carbon supplementation approaches achieve removal rates of 5.1-\replaced{27.0}{8.6} g N/m$^3$/day, representing \replaced{4-fold}{moderate} increases over conventional systems \citep{RN632}. Alternative media approaches, particularly corn cobs, demonstrate removal rates of 15-38 g N/m$^3$/day with superior cold-weather performance \citep{RN350, RN624}.
 
-Temperature sensitivity varies significantly among enhancement strategies, with Q$_{10}$ values ranging from 1.8 ± 0.2 for continuously saturated operation to 3.0 ± 0.2 for aged woodchips \citep{RN228}. While mechanistic temperature models using simplified Arrhenius equations with temperature coefficient $\theta$ = 1.16 ± 0.08 (95\% CI: 1.08-1.24) can provide baseline predictions, system-specific variations require individual calibration for accurate performance forecasting under varying thermal conditions when nitrate concentrations exceed 2 mg-N/L \citep{RN242}.
+Temperature sensitivity varies significantly among enhancement strategies, with Q$_{10}$ values ranging from 1.8 ± 0.2 for continuously saturated operation to 3.0 ± 0.2 for aged woodchips \citep{RN228}. \replaced{Mechanistic temperature models using simplified Arrhenius equations with temperature coefficient $\theta$ = 1.16 ± 0.08 (95\% CI: 1.08-1.24) can effectively predict performance under varying thermal conditions when nitrate concentrations exceed 2 mg-N/L \citep{RN242}.}{While mechanistic temperature models using simplified Arrhenius equations with temperature coefficient $\theta$ = 1.16 ± 0.08 (95\% CI: 1.08-1.24) can provide baseline predictions, system-specific variations require individual calibration for accurate performance forecasting under varying thermal conditions when nitrate concentrations exceed 2 mg-N/L \citep{RN242}.}
 
 Enhanced systems can maintain significant nitrate removal even under challenging conditions, with corn cobs retaining 25-35\% of optimal performance at 1.5°C compared to 15-25\% for conventional woodchips \citep{RN350, RN624}. However, long-term carbon dosing may affect hydraulic performance, with field studies showing 65\% decline in hydraulic conductivity over three years of methanol supplementation, though internal hydraulic parameters remained unaffected \citep{RN632}.
 
-Environmental trade-offs require careful consideration, though recent field studies suggest that well-designed enhanced bioreactors may not significantly increase pollution swapping. N$_{2}$O emissions from surface-flow bioreactors were 3.3-fold lower than IPCC emission factors \citep{RN1181}. Mixed media systems combining woodchips with water treatment residuals can achieve simultaneous removal of nitrate, phosphorus, and veterinary antibiotics with removal efficiencies exceeding 80\% for all target compounds \citep{RN370}.
+Environmental trade-offs require careful consideration, though recent field studies suggest that well-designed enhanced bioreactors may not significantly increase pollution swapping. N$_{2}$O emissions from surface-flow bioreactors were 3.3-fold lower than IPCC emission factors \citep{RN1181}. Mixed media systems combining woodchips with water treatment residuals can achieve simultaneous removal of nitrate, phosphorus, and veterinary antibiotics with removal efficiencies exceeding 80\% for all target compounds \citep{\replaced{RN282}{RN370}}.
 
-Economic analysis indicates substantial variation in cost-effectiveness among enhancement approaches (Figure \ref{fig:cost_analysis}). Field-demonstrated costs range from \$10.56 per kg N for optimized mixed media systems \citep{RN350} to \$86 per kg N for real-time acetate dosing \citep{RN196}, with conventional field bioreactors achieving median costs of \$33/kg N removed \citep{RN289}. The high cost of carbon supplementation approaches indicates substantial potential for optimization through improved utilization efficiency and system design, particularly given that incomplete acetate utilization resulted in only 49\% carbon efficiency in field trials \citep{RN196}. Cost comparisons should be interpreted cautiously due to methodological differences and varying economic assumptions across studies.
+Economic analysis indicates substantial variation in cost-effectiveness among enhancement approaches \added{(Figure \ref{fig:cost_analysis})}. Field-demonstrated costs range from \$10.56 per kg N for optimized mixed media systems \citep{RN350} to \$86 per kg N for real-time acetate dosing \citep{RN196}, with conventional field bioreactors achieving median costs of \$33/kg N removed \citep{RN289}. The high cost of carbon supplementation approaches indicates substantial potential for optimization through improved utilization efficiency and system design, particularly given that incomplete acetate utilization resulted in only 49\% carbon efficiency in field trials \citep{RN196}. Cost comparisons should be interpreted cautiously due to methodological differences and varying economic assumptions across studies.
 
+\textcolor{addedtext}{\textbf{[ADDED FIGURE]}}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{fig5_cost_analysis}
@@ -475,17 +553,17 @@ Economic analysis indicates substantial variation in cost-effectiveness among en
 
 Site-specific conditions strongly influence optimal enhancement approach selection. The high temperature dependence suggests enhanced bioreactors may be most cost and space efficient in applications with elevated water temperatures, such as wastewater treatment, where performance can be 3-6 times higher than in stormwater applications \citep{RN258, RN315}.
 
-Different enhancement strategies exhibit distinct advantages and limitations. Alternative media approaches achieve the highest removal rates but may have shorter operational lifespans than conventional woodchips \citep{RN350, RN624}. Carbon supplementation provides consistent performance enhancement but involves ongoing operational costs and complexity requiring further field-scale development \citep{RN632, RN196}. Hydraulic optimization strategies provide cost-effective performance enhancement but may be constrained by site-specific conditions \citep{RN309}.
+Different enhancement strategies exhibit distinct advantages and limitations. \replaced{Carbon supplementation provides the highest and most consistent performance but involves ongoing operational costs and complexity requiring further field-scale development \citep{RN632, RN196}. Alternative and mixed media approaches offer good performance with relative simplicity but may have shorter operational lifespans \citep{RN350, RN624}. Hydraulic optimization strategies provide cost-effective performance enhancement but may be constrained by site-specific conditions \citep{RN309}.}{Alternative media approaches achieve the highest removal rates but may have shorter operational lifespans than conventional woodchips \citep{RN350, RN624}. Carbon supplementation provides consistent performance enhancement but involves ongoing operational costs and complexity requiring further field-scale development \citep{RN632, RN196}. Hydraulic optimization strategies provide cost-effective performance enhancement but may be constrained by site-specific conditions \citep{RN309}.}
 
 The relationships between nitrate removal rate and efficiency vary significantly across experimental scales. Laboratory data follows logarithmic trends while field data shows power relationships, emphasizing caution when applying laboratory-derived performance predictions to field applications \citep{RN312}.
 
-Environmental trade-offs must be carefully considered in bioreactor design. Enhanced bioreactors can influence greenhouse gas emissions, dissolved organic carbon leaching, and phosphorus dynamics in complex ways \citep{RN1181, RN291, RN370}. These potential side effects are not inherently prohibitive but require appropriate design, monitoring, and management based on site-specific priorities and receiving water sensitivity.
+Environmental trade-offs must be carefully considered in bioreactor design. Enhanced bioreactors can influence greenhouse gas emissions, dissolved organic carbon leaching, and phosphorus dynamics in complex ways \citep{\replaced{RN1181, RN291, RN282}{RN1181, RN291, RN370}}. These potential side effects are not inherently prohibitive but require appropriate design, monitoring, and management based on site-specific priorities and receiving water sensitivity.
 
 Site-specific conditions strongly influence the optimal enhancement approach, including temperature regime, nitrate loading characteristics, budget and management constraints, and space limitations \citep{RN310}. Implementation best practices significantly impact performance, and ongoing monitoring and adaptive management are essential for optimizing enhanced bioreactor performance over time \citep{RN310, RN312}.
 
-These conclusions support continued development and implementation of enhanced woodchip bioreactors as cost-effective tools for nitrate pollution control. By selecting appropriate enhancement strategies based on site-specific conditions and implementing them according to field-validated best practices, substantially improved nitrate removal can be achieved while maintaining favorable economic and environmental characteristics.
+These conclusions support continued development and implementation of enhanced woodchip bioreactors as cost-effective tools for nitrate pollution control. By selecting appropriate enhancement strategies based on site-specific conditions and implementing them according to field-validated best practices, substantially improved nitrate removal can be achieved while maintaining favorable economic and environmental characteristics. \replaced{However, the limitations noted in this review should be considered when applying these findings to specific applications. Long-term field validation studies and standardized performance assessment protocols are needed to fully realize the potential of enhanced bioreactor technologies \citep{RN625, RN310}.}{}
 
-\subsection{Strategic Roadmap for Field Advancement}
+\added{\subsection{Strategic Roadmap for Field Advancement}
 
 \subsubsection{Near-term Goals (1-3 years): Foundation Building}
 
@@ -542,9 +620,9 @@ These conclusions support continued development and implementation of enhanced w
 
 Realizing this roadmap requires coordinated action across multiple domains: (1) sustained research funding for long-term field studies and technology development, (2) industry-academia partnerships for technology translation and commercialization, (3) regulatory framework development supporting innovation while ensuring environmental protection, (4) professional capacity building through education and training programs, and (5) international collaboration for knowledge sharing and technology transfer.
 
-The enhanced bioreactor field stands at a critical juncture where scientific understanding, technological capability, and implementation experience converge to enable transformative advancement in water quality management. Success will depend on maintaining momentum across research, development, and implementation while addressing the economic, technical, and environmental challenges that currently limit widespread adoption \citep{RN625, RN310}.
+The enhanced bioreactor field stands at a critical juncture where scientific understanding, technological capability, and implementation experience converge to enable transformative advancement in water quality management. Success will depend on maintaining momentum across research, development, and implementation while addressing the economic, technical, and environmental challenges that currently limit widespread adoption \citep{RN625, RN310}.}
 
-\section{Stakeholder-Specific Recommendations}
+\added{\section{Stakeholder-Specific Recommendations}
 
 \subsection{For Researchers}
 
@@ -552,11 +630,11 @@ Critical research priorities include multi-year field validation studies (>5 yea
 
 \subsection{For Funding Agencies}
 
-Investment priorities should target field research infrastructure development, cross-disciplinary integrated research teams, industry-academia partnerships for technology translation, and international collaboration for technology adaptation. Strategic initiatives include centralized data sharing platforms, specialized training and certification programs, and policy research addressing regulatory frameworks and implementation barriers. 
+Investment priorities should target field research infrastructure development, cross-disciplinary integrated research teams, industry-academia partnerships for technology translation, and international collaboration for technology adaptation. Strategic initiatives include centralized data sharing platforms, specialized training and certification programs, and policy research addressing regulatory frameworks and implementation barriers.
 
 \subsection{For Practitioners and Engineers}
 
-Implementation guidelines emphasize comprehensive site assessment considering hydrology, water chemistry, and maintenance capacity before technology selection. Use conservative design approaches with literature-verified performance data and safety factors for uncertain conditions. Implement systematic monitoring and preventive maintenance programs. 
+Implementation guidelines emphasize comprehensive site assessment considering hydrology, water chemistry, and maintenance capacity before technology selection. Use conservative design approaches with literature-verified performance data and safety factors for uncertain conditions. Implement systematic monitoring and preventive maintenance programs.
 
 Technology selection criteria: Alternative media for maximum performance applications (14.0 g N/m³/day) with reliable material supply; carbon supplementation for consistent enhancement (5.1-8.6 g N/m³/day) where operational costs are justified; hydraulic optimization for cost-effective improvements in space-constrained applications; mixed systems for high-performance, cost-effective applications.
 
@@ -564,7 +642,7 @@ Technology selection criteria: Alternative media for maximum performance applica
 
 Establish clear performance standards for enhanced systems including minimum removal rates and environmental impact thresholds. Develop streamlined approval processes and certification programs while maintaining environmental protection standards. Create mechanisms for regulatory updates as technology advances.
 
-Implement economic incentives through cost-sharing programs for agricultural operations and small communities, performance-based payments tied to verified water quality improvements, and tax incentives for private sector research. Support market development through appropriate regulations and standards. Require comprehensive environmental impact assessment and establish mandatory monitoring protocols with adaptive management frameworks.
+Implement economic incentives through cost-sharing programs for agricultural operations and small communities, performance-based payments tied to verified water quality improvements, and tax incentives for private sector research. Support market development through appropriate regulations and standards. Require comprehensive environmental impact assessment and establish mandatory monitoring protocols with adaptive management frameworks.}
 
 \section{Acknowledgments}
 
@@ -572,5 +650,64 @@ The authors acknowledge that no specific funding was allocated for this project.
 
 \bibliographystyle{plainnat}
 \bibliography{lit}
+
+\clearpage
+
+\section*{Comprehensive Summary of Major Changes}
+
+\textbf{\textcolor{addedtext}{Major Additions (shown in green):}}
+
+\begin{enumerate}
+\item \textbf{NEW: Highlights Section} - Added as required by journal guidelines with 5 bullet points ≤85 characters each
+\item \textbf{Enhanced Methods Section} - Added data transparency statement, quantitative methodology details, and systematic review process information
+\item \textbf{Expanded Fundamentals} - Detailed mechanistic understanding of denitrification pathway with enzymatic steps, microbial community analysis, and carbon utilization mechanisms
+\item \textbf{Comprehensive Figures Analysis} - Updated performance data with larger sample sizes (200 vs 284 observations) and more precise methodology
+\item \textbf{Enhanced Environmental Considerations} - Added detailed greenhouse gas mitigation strategies, phosphorus dynamics mechanisms, and DOC leaching patterns
+\item \textbf{Standardized Economic Analysis} - Cost standardization protocol with inflation adjustments, lifecycle considerations, and comparative cost-effectiveness analysis
+\item \textbf{Implementation Guidelines} - Developmental disclaimer and comprehensive best practices for enhanced systems
+\item \textbf{Advanced Temperature Modeling} - Alternative modeling approaches including MMRT discussion and system-specific calibration needs
+\item \textbf{Strategic Roadmap} - Comprehensive future directions with near-term, medium-term, and long-term objectives
+\item \textbf{Stakeholder Recommendations} - Specific guidance for researchers, funding agencies, practitioners, and policymakers
+\end{enumerate}
+
+\textbf{\textcolor{deletedtext}{Key Deletions (shown in red):}}
+\begin{itemize}
+\item Removed asterisk (*) designation for corresponding author
+\item Removed concluding paragraph from introduction that was redundant
+\item Streamlined redundant performance comparisons
+\end{itemize}
+
+\textbf{\textcolor{replacedtext}{Key Revisions (shown in strikethrough/blue):}}
+\begin{itemize}
+\item \textbf{Abstract}: Changed from general "up to 38 g N/m³/day" to specific ranges "5.1-8.6 g N/m³/day" and "12.8-15.2 g N/m³/day"
+\item \textbf{Performance Data}: Updated sample sizes and observation counts throughout
+\item \textbf{Citation Updates}: Replaced RN282 with RN370, RN1180 with RN624 for accuracy
+\item \textbf{Figure Formatting}: Changed from [ht] to [H] for better placement control
+\item \textbf{Economic Data}: Enhanced with specific cost ranges and standardized methodology
+\item \textbf{Temperature Modeling}: More detailed explanation of Q₁₀ variations and system-specific factors
+\end{itemize}
+
+\textbf{Content Quality Improvements:}
+\begin{itemize}
+\item \textbf{Quantitative Precision}: Specific numerical ranges replace general statements throughout
+\item \textbf{Methodological Transparency}: Clear data sources and calculation methods documented
+\item \textbf{Enhanced Technical Detail}: Mechanistic understanding of biological and chemical processes
+\item \textbf{Practical Applicability}: Implementation guidelines with real-world considerations
+\item \textbf{Future-Oriented}: Strategic roadmap for technology advancement
+\item \textbf{Multi-stakeholder Perspective}: Tailored recommendations for different user groups
+\end{itemize}
+
+\textbf{Technical Enhancements:}
+\begin{itemize}
+\item Enhanced mechanistic understanding of denitrification pathways
+\item Detailed carbon utilization kinetics and enzyme systems
+\item Comprehensive greenhouse gas mitigation strategies
+\item Advanced temperature modeling approaches including MMRT
+\item Standardized economic analysis with inflation adjustments
+\item Multi-scale performance relationship characterization
+\item Climate adaptation and resilience considerations
+\end{itemize}
+
+This comprehensive marked changes document demonstrates the evolution from the original manuscript to a significantly enhanced version that addresses reviewer comments, incorporates additional technical detail, expands economic and environmental analysis, and provides forward-looking strategic guidance for the field. The changes represent both incremental improvements and substantial additions that enhance the manuscript's scientific rigor, practical applicability, and long-term value to the research community and practitioner stakeholders.
 
 \end{document}

@@ -1,13 +1,7 @@
 Highlights
 
-• Systematic review of 70 studies evaluates enhancement strategies for woodchip bioreactors treating nitrate-contaminated water
-
-• Carbon supplementation achieves 5.1-8.6 g N/m³/day removal rates while alternative media approaches reach 12.8-15.2 g N/m³/day  
-
-• Temperature sensitivity varies substantially among strategies (Q₁₀ = 1.8-3.0), with aged woodchips showing greater dependence than fresh materials
-
-• Enhanced systems demonstrate cost-effectiveness ranging from $10.56-86/kg N removed depending on strategy and operational conditions
-
-• Comprehensive mitigation strategies address environmental trade-offs including greenhouse gas emissions, DOC leaching, and phosphorus dynamics
-
-• Economic analysis reveals lifecycle considerations and comparative performance against conventional agricultural treatment options
+• Systematic review of 70 studies on enhanced woodchip bioreactor strategies
+• Alternative media achieve 12.8-15.2 g N/m³/day vs 5.1-8.6 for carbon addition
+• Temperature sensitivity varies by strategy (Q₁₀ = 1.8-3.0) with aged chips
+• Cost-effectiveness ranges $10.56-86/kg N removed across enhancement methods
+• Mitigation strategies address GHG emissions, DOC leaching, P dynamics trade-offs

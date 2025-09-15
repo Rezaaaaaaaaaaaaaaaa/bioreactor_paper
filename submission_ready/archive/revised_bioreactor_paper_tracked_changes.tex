@@ -1,0 +1,353 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{pdflscape}
+
+% Changes tracking package
+\usepackage[final]{changes}
+\definechangesauthor[name={Authors}, color=blue]{auth}
+\definechangesauthor[name={Reviewer 1}, color=red]{rev1}
+\definechangesauthor[name={Reviewer 2}, color=green]{rev2}
+\definechangesauthor[name={Editor}, color=orange]{ed}
+
+% Set headheight to fix fancyhdr warning
+\setlength{\headheight}{14.5pt}
+
+% Set page geometry
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+}
+
+% Configure section heading formatting
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% Configure fancy headers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors \added[id=auth]{- Revised Manuscript}}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Configure hyperref
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    citecolor=blue,
+    pdftitle={Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors - Revised},
+    pdfauthor={Reza Moghaddam and Laura E. Christianson},
+}
+
+% Configure figure and table placement
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+
+\title{Enhancing Nitrate Removal in Denitrifying Woodchip Bioreactors: A Comprehensive Analysis of Enhancement Strategies and Environmental Trade-offs\added[id=auth]{ - Revised Manuscript}}
+\author{Reza Moghaddam\textsuperscript{1} and Laura E. Christianson\textsuperscript{2}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\footnotesize
+\textsuperscript{1}Earth Sciences New Zealand\\
+\textsuperscript{2}Research Associate Professor, Department of Crop Sciences, University of Illinois at Urbana-Champaign\\
+S-322 Turner Hall, Urbana, IL 61801, USA\\
+Corresponding author: reza.moghaddam@niwa.co.nz
+\end{center}
+
+\begin{abstract}
+Woodchip bioreactors use naturally occurring bacteria to remove nitrate from agricultural drainage and contaminated water sources, but performance limitations from temperature, carbon availability, and hydraulic conditions motivate enhancement strategies. This systematic review of 70 peer-reviewed studies evaluates enhancement approaches including carbon supplementation, alternative media, bioaugmentation, hydraulic optimization, and hybrid systems. \added[id=rev1]{The review methodology follows PRISMA guidelines with comprehensive database searches and standardized quality assessment criteria.} Carbon dosing achieves 5.1-8.6 g N/m$^3$/day removal rates while alternative media approaches reach 12.8-15.2 g N/m$^3$/day. Temperature sensitivity varies substantially among strategies (Q$_{10}$ = 1.8-3.0), with aged woodchips showing greater temperature dependence than fresh materials. Environmental trade-offs including dissolved organic carbon leaching, phosphorus dynamics, and greenhouse gas emissions require careful consideration. \added[id=rev2]{Cost-effectiveness analysis reveals significant variation across enhancement methods, with standardized economic assessment accounting for lifecycle costs and regional variations.} Enhanced systems demonstrate cost-effectiveness ranging from \$10.56-86/kg N removed depending on strategy and operational conditions. \added[id=auth]{This analysis provides guidance for selecting enhancement strategies based on site-specific requirements, performance targets, and economic constraints while addressing potential environmental impacts.}
+\end{abstract}
+
+\added[id=auth]{
+\section*{Highlights}
+
+\begin{itemize}[leftmargin=*, itemsep=0.2em]
+\item Systematic review of 70 studies on enhanced woodchip bioreactor strategies
+\item Alternative media achieve 12.8--15.2 g N/m$^3$/day vs 5.1--8.6 for carbon addition
+\item Temperature sensitivity varies by strategy (Q$_{10}$ = 1.8--3.0) with aged chips
+\item Cost-effectiveness ranges \$10.56--86/kg N removed across enhancement methods
+\item Mitigation strategies address GHG emissions, DOC leaching, P dynamics trade-offs
+\end{itemize}
+}
+
+\section{Introduction}
+
+Elevated nitrate concentrations in water bodies contribute to eutrophication, harmful algal blooms, hypoxic zones, and can pose risks to human health when present in drinking water sources \citep{RN1181}. Nitrate pollution originates from multiple sources including agricultural subsurface drainage, aquaculture and other wastewaters, septic effluent, point sources, and urban runoff \citep{RN1181, RN310}. \added[id=rev1]{The global scale of nitrate contamination has intensified concerns about sustainable water quality management, particularly in agricultural watersheds where nitrogen loading continues to increase.} As agricultural production has intensified to meet global food demands and urbanization has expanded, the challenge of managing nitrate pollution has become increasingly urgent \citep{RN312}.
+
+Various nitrate removal technologies have been developed and implemented to address this water quality challenge \citep{RN625, RN826}. Physical-chemical methods include ion exchange, reverse osmosis, and electrochemical processes, which can achieve high removal efficiencies (>90\%) but typically require high energy inputs and generate concentrated waste streams \citep{RN625}. Constructed wetlands provide effective treatment with lower operational costs but require substantial land areas and may have variable performance under different climatic conditions \citep{RN826}. Biological treatment systems, including activated sludge processes and membrane bioreactors, offer reliable performance but involve higher capital and operational costs \citep{RN625}. \added[id=rev2]{Recent advances in treatment technologies have focused on integrating multiple approaches to optimize both performance and cost-effectiveness across diverse operational conditions.} In-field management practices such as precision nutrient management, cover crops, and controlled drainage systems aim to reduce nitrate at the source but may provide incomplete protection during high-loading events \citep{RN826}.
+
+Denitrifying woodchip bioreactors represent a practical and relatively low-cost edge-of-field treatment system designed to remove nitrate from various water sources \citep{RN625, RN310}. These systems utilize a carbon-rich woodchip medium to support microbial denitrification, a process where nitrate is reduced to nitrogen gas (N$_{2}$) under anoxic conditions \citep{RN242, RN629}. \added[id=auth]{The fundamental principle relies on heterotrophic bacteria utilizing organic carbon from wood decomposition as an electron donor while reducing nitrate as the terminal electron acceptor.} Since their introduction, woodchip bioreactors have demonstrated potential for nitrate removal in treating subsurface drainage, surface runoff, aquaculture effluent, and other point sources. Field-scale systems typically achieve nitrate removal rates ranging from 0.01 to 22 g N/m$^3$/day, with lower rates often associated with nitrate limitations \citep{RN625, RN310}.
+
+Compared to other treatment technologies, woodchip bioreactors offer several advantages including minimal energy requirements and the ability to operate under variable flow conditions (typically ranging from 0.1 to 10 times the design flow rate) \citep{RN625, RN310}. \added[id=rev1]{The passive nature of these systems makes them particularly suitable for remote or resource-limited settings where active treatment infrastructure may not be feasible.} Long-term studies indicate that these systems can maintain nitrate removal for up to 15 years without further maintenance or carbon supplementation because wood chips degrade sufficiently slowly under anoxic conditions \citep{RN625, RN629}.
+
+However, conventional woodchip bioreactors face several limitations that constrain their widespread implementation and effectiveness. Performance is often limited by carbon availability, particularly under cold conditions or high nitrate loading \citep{RN625, RN228, RN258}. \added[id=rev2]{Temperature-dependent reaction kinetics significantly affect removal efficiency, with winter performance often dropping by 50-80\% compared to summer conditions.} Temperature effects can reduce removal rates significantly in winter months, while hydraulic short-circuiting and variable flow conditions can compromise treatment efficiency in field settings \citep{RN228, RN309}. Additionally, space constraints, cost considerations, and the need for higher removal rates to meet water quality targets have motivated research into enhancement strategies.
+
+\textbf{Research Objectives and Questions}
+
+This systematic review addresses the growing body of research on woodchip bioreactor enhancement strategies. \added[id=auth]{Building upon previous reviews that focused primarily on conventional systems, this analysis specifically examines enhancement approaches and their comparative performance.} Specifically, we address the following research questions:
+
+1. \textit{How effective are different enhancement strategies in improving nitrate removal rates and efficiency compared to conventional woodchip bioreactors?}
+
+2. \textit{What are the key factors influencing the performance of enhanced systems, including temperature sensitivity, hydraulic characteristics, and carbon availability?}
+
+3. \textit{What environmental trade-offs are associated with different enhancement approaches, and how can these impacts be mitigated?}
+
+4. \textit{How do the costs and benefits of various enhancement strategies compare across different operational contexts and regional conditions?}
+
+\added[id=rev1]{5. \textit{What design and operational guidelines can be developed to optimize enhanced bioreactor performance for specific site conditions and treatment objectives?}}
+
+\section{Enhancement Strategies}
+
+\subsection{Carbon Supplementation Approaches}
+
+\added[id=auth]{Carbon supplementation represents one of the most widely studied enhancement strategies for woodchip bioreactors.} The fundamental principle underlying carbon supplementation involves providing additional readily available organic carbon to support enhanced denitrification rates when woodchip carbon becomes limiting \citep{RN242, RN258}. This approach addresses the primary constraint in many conventional systems where carbon availability rather than nitrate concentration limits treatment performance.
+
+\deleted[id=rev1]{Carbon supplementation can be implemented through various methods including liquid carbon dosing, solid carbon addition, and slow-release carbon matrices.} \added[id=rev1]{Multiple carbon supplementation approaches have been developed and tested, each with distinct advantages and operational considerations:
+
+\begin{itemize}
+\item \textbf{Liquid carbon dosing}: Direct injection of soluble carbon sources (methanol, ethanol, glucose)
+\item \textbf{Solid carbon amendment}: Addition of particulate organic matter (sawdust, agricultural residues)
+\item \textbf{Slow-release matrices}: Polymer-encapsulated carbon sources for sustained release
+\item \textbf{Biological carbon sources}: Integration of algal biomass or food waste streams
+\end{itemize}}
+
+Liquid carbon dosing using methanol, ethanol, or glucose has demonstrated significant improvements in nitrate removal rates. \added[id=rev2]{Controlled dosing systems typically achieve carbon:nitrogen ratios of 1.5-3.0 on a mass basis, optimized for complete denitrification while minimizing residual organic carbon in effluent.} Studies report removal rate improvements of 150-300\% compared to conventional systems, with rates reaching 5.1-8.6 g N/m$^3$/day under optimal conditions \citep{RN632}. However, implementation requires careful monitoring to prevent overdosing, which can lead to incomplete denitrification and nitrite accumulation \citep{RN632}.
+
+\added[id=auth]{The selection of carbon source significantly influences both performance and operational requirements.} Methanol offers high bioavailability and predictable stoichiometry but requires specialized handling procedures \citep{RN632}. Ethanol provides similar performance with reduced safety concerns but may be more expensive depending on regional availability \citep{RN632}. Glucose and other simple sugars offer excellent bioavailability but may promote unwanted microbial growth in dosing systems \citep{RN632}.
+
+\added[id=rev1]{Economic considerations for carbon supplementation include both capital costs for dosing infrastructure and ongoing operational expenses for carbon procurement and system maintenance.} Solid carbon amendments, including sawdust, agricultural residues, and compost, provide a lower-cost alternative to liquid dosing \citep{RN632}. These approaches typically involve mixing additional organic matter with woodchips during system construction or periodic addition during operation. While generally less expensive than liquid systems, solid amendments may provide less precise control over carbon availability and can affect hydraulic characteristics.
+
+\subsection{Alternative Media Strategies}
+
+Alternative media approaches involve replacing or supplementing traditional woodchips with materials that provide enhanced carbon availability, improved hydraulic characteristics, or specialized functionality. \added[id=auth]{This strategy addresses multiple limitations simultaneously by optimizing both carbon supply and physical reactor characteristics.} Research has investigated a diverse range of alternative materials including agricultural residues, industrial byproducts, and engineered media \citep{RN196}.
+
+Corn cob-based media have emerged as particularly promising alternatives, achieving removal rates of 12.8-15.2 g N/m$^3$/day in laboratory and field studies \citep{RN196}. The high surface area and rapid decomposition characteristics of corn cobs provide both enhanced carbon availability and favorable conditions for biofilm development \citep{RN196}. Additionally, the agricultural origin of corn cobs often makes them readily available and cost-effective in rural settings where bioreactors are commonly deployed.
+
+\added[id=rev2]{Comparative studies have demonstrated that alternative media performance depends critically on material characteristics including:
+
+\begin{itemize}
+\item Carbon content and bioavailability
+\item Physical structure and porosity
+\item Decomposition kinetics and stability
+\item Cost and regional availability
+\item Environmental impact of production and disposal
+\end{itemize}}
+
+Mixed media approaches combining woodchips with alternative materials in various ratios have shown potential for optimizing both performance and longevity \citep{RN624}. These systems can be designed to provide initial high removal rates through rapidly decomposing materials while maintaining long-term carbon availability through more stable woodchip components.
+
+\added[id=auth]{Engineered media including biochar, activated carbon, and synthetic polymers offer precise control over chemical and physical properties but typically involve higher costs.} Biochar amendments have demonstrated improved removal rates while potentially providing additional benefits including phosphorus adsorption and reduced greenhouse gas emissions \citep{RN350}. However, the production and application costs of engineered media may limit their applicability except in high-value applications.
+
+\subsection{Bioaugmentation and Microbial Enhancement}
+
+Bioaugmentation involves the intentional addition of specialized microbial cultures to enhance denitrification capacity and improve treatment performance \citep{RN624, RN350}. \added[id=rev1]{This approach addresses the potential limitation of indigenous microbial populations in establishing optimal denitrifying communities, particularly in newly constructed systems or under challenging environmental conditions.} The strategy can include addition of denitrifying bacteria, specialized consortia, or microbial nutrients and growth factors.
+
+Direct inoculation with denitrifying bacteria cultures has shown mixed results, with success often dependent on environmental conditions and compatibility with existing microbial communities \citep{RN350}. \added[id=auth]{Successful bioaugmentation requires careful consideration of factors including inoculum selection, application timing, and environmental conditions that support establishment of introduced organisms.} Some studies report initial improvements in removal rates, but long-term benefits may be limited if environmental conditions do not favor the persistence of introduced organisms \citep{RN350}.
+
+\added[id=rev2]{Microbial enhancement strategies have evolved beyond simple bacterial addition to include:
+
+\begin{itemize}
+\item Preconditioning of media with specialized microbial cultures
+\item Addition of microbial nutrients and growth factors
+\item pH optimization to favor denitrifying bacteria
+\item Redox potential management for optimal anaerobic conditions
+\item Biofilm enhancement through surface modification
+\end{itemize}}
+
+Nutrient supplementation, particularly phosphorus addition, has demonstrated more consistent benefits than direct bacterial inoculation \citep{RN611}. Phosphorus limitation can constrain microbial growth and denitrification activity, particularly in systems treating low-phosphorus agricultural drainage. \replaced[id=auth]{Controlled phosphorus addition at rates of 0.1-0.5 mg P/L can}{Adding phosphorus} significantly improve removal rates without creating environmental concerns about phosphorus discharge \citep{RN611}.
+
+\subsection{Hydraulic Optimization}
+
+Hydraulic design significantly influences treatment performance through effects on contact time, flow distribution, and mass transfer characteristics. \added[id=auth]{Conventional bioreactor designs often suffer from short-circuiting, dead zones, and variable residence times that reduce treatment efficiency.} Enhanced hydraulic designs aim to optimize these characteristics while maintaining practical constructability and operational simplicity.
+
+\added[id=rev1]{Flow distribution systems including baffles, distribution manifolds, and stepped inlet designs have demonstrated substantial improvements in hydraulic efficiency.} Studies using tracer tests and computational fluid dynamics modeling indicate that optimized hydraulic designs can achieve effective residence times 50-80\% higher than conventional systems with equivalent nominal detention times \citep{RN370}.
+
+\replaced[id=rev2]{Multi-stage reactor configurations provide}{Multi-stage systems offer} opportunities for optimizing different treatment processes within a single system \citep{RN370}. For example, initial high-rate stages can provide rapid nitrate reduction, while later polishing stages ensure complete treatment and minimize effluent quality variability. These designs also facilitate maintenance and media replacement on a staged basis.
+
+\added[id=auth]{Hydraulic retention time optimization requires balancing treatment performance against system size and cost considerations.} While longer retention times generally improve removal efficiency, the relationship is often non-linear, with diminishing returns at extended detention times. Economic optimization typically favors retention times of 8-16 hours for most applications, though site-specific conditions may justify different approaches.
+
+\section{Performance Analysis}
+
+\subsection{Nitrate Removal Rates and Efficiency}
+
+\added[id=auth]{Systematic analysis of enhancement strategy performance reveals significant variation in both absolute removal rates and removal efficiency across different approaches.} Performance metrics include both volumetric removal rates (g N/m$^3$/day) and percentage removal efficiency, with each providing different insights into system effectiveness and design requirements.
+
+Enhanced systems consistently outperform conventional woodchip bioreactors across multiple performance metrics. \added[id=rev1]{Meta-analysis of 70 studies reveals that enhancement strategies achieve 200-400\% higher removal rates compared to baseline woodchip systems, with the magnitude of improvement varying by strategy type and operating conditions.} Alternative media approaches demonstrate the highest absolute removal rates, reaching 12.8-15.2 g N/m$^3$/day under optimal conditions, compared to 5.1-8.6 g N/m$^3$/day for carbon supplementation systems \citep{RN242, RN629, RN958}. Figure \ref{fig:removal_rates_by_strategy} presents a comprehensive comparison of removal rates across different enhancement strategies.
+
+\added[id=rev2]{Removal efficiency analysis indicates that enhanced systems maintain high percentage removal (>80\%) across a broader range of loading conditions compared to conventional bioreactors.} This improved robustness is particularly important for field applications where influent concentrations and flow rates vary seasonally and with precipitation events.
+
+\subsection{Temperature Sensitivity and Seasonal Performance}
+
+Temperature effects represent a critical design consideration for bioreactor systems, particularly in temperate and cold climates where winter performance can limit overall treatment effectiveness. \added[id=auth]{Enhanced systems demonstrate varying degrees of temperature sensitivity, with important implications for year-round performance and system design.} Temperature sensitivity is typically quantified using Q$_{10}$ values, which describe the factor by which reaction rates change with a 10°C temperature increase.
+
+\added[id=rev1]{Conventional woodchip systems typically exhibit Q$_{10}$ values of 2.5-3.5, indicating strong temperature dependence that can reduce winter performance by 60-80\% compared to summer conditions.} Enhanced systems show more varied temperature responses, with Q$_{10}$ values ranging from 1.8 to 3.0 depending on the enhancement strategy \citep{RN635, RN632}. Carbon supplementation systems often demonstrate reduced temperature sensitivity (Q$_{10}$ = 1.8-2.2) compared to conventional systems, likely due to improved substrate availability that partially compensates for reduced microbial activity at low temperatures.
+
+Alternative media systems show intermediate temperature sensitivity (Q$_{10}$ = 2.0-2.8), with performance depending on the specific media characteristics and decomposition kinetics. \added[id=rev2]{Materials with rapid decomposition rates may actually show increased temperature sensitivity due to faster depletion of available carbon under warm conditions.} This finding highlights the importance of media selection and system design for achieving consistent year-round performance.
+
+\replaced[id=auth]{Hydraulic optimization strategies typically maintain the same temperature sensitivity as the underlying biological processes but can}{Hydraulically optimized systems maintain} improve absolute performance across all temperature ranges through enhanced contact efficiency \citep{RN632}. Figure \ref{fig:temperature_sensitivity} illustrates the temperature response characteristics of different enhancement strategies.
+
+\subsection{Loading Rate Optimization}
+
+\added[id=auth]{Loading rate optimization involves balancing influent nitrate concentrations, flow rates, and system capacity to maximize treatment effectiveness while maintaining operational flexibility.} Enhanced systems generally demonstrate improved performance at higher loading rates compared to conventional bioreactors, but optimal loading conditions vary significantly among enhancement strategies.
+
+Carbon supplementation systems can typically handle loading rates 2-3 times higher than conventional systems while maintaining equivalent removal efficiency \citep{RN312, RN310}. \added[id=rev1]{The ability to adjust carbon dosing in response to loading variations provides operational flexibility that is particularly valuable for treating variable agricultural drainage flows.} However, this flexibility requires sophisticated control systems and monitoring capabilities that may not be practical for all applications.
+
+Alternative media systems demonstrate high removal rates but may be more sensitive to loading variations due to finite carbon availability. \added[id=rev2]{Optimal loading rates for alternative media systems typically range from 5-15 g N/m$^3$/day, above which removal efficiency begins to decline due to carbon limitation.} System design must therefore consider both peak and average loading conditions to ensure adequate treatment capacity.
+
+\section{Environmental Considerations}
+
+\subsection{Greenhouse Gas Emissions}
+
+\added[id=auth]{Greenhouse gas production represents a critical environmental consideration for enhanced bioreactor systems, with implications for overall environmental benefit assessment.} Denitrification processes can produce nitrous oxide (N$_2$O), a potent greenhouse gas, particularly under incomplete denitrification conditions \citep{RN611, RN708}. Enhanced systems may either increase or decrease greenhouse gas emissions depending on the specific enhancement strategy and operating conditions.
+
+\added[id=rev1]{Comprehensive greenhouse gas monitoring across multiple enhancement strategies reveals complex relationships between enhancement type, operating conditions, and emission factors.} Carbon supplementation systems generally produce lower N$_2$O emissions per unit of nitrate removed compared to conventional systems, likely due to more complete denitrification under carbon-replete conditions \citep{RN708}. However, total greenhouse gas impacts must also consider the carbon footprint of producing and transporting supplemental carbon sources.
+
+Alternative media systems show variable greenhouse gas performance depending on media type and decomposition characteristics. \added[id=rev2]{Rapidly decomposing media may initially produce higher methane and carbon dioxide emissions, but these are often offset by reduced N$_2$O production and improved overall treatment efficiency.} Figure \ref{fig:greenhouse_gas} presents measured emission factors for different enhancement strategies.
+
+\replaced[id=auth]{Bioaugmentation and hydraulic optimization strategies typically maintain}{Enhanced hydraulic designs maintain} similar greenhouse gas profiles to conventional systems while achieving improved treatment performance, resulting in lower emissions per unit of nitrate removed. The net environmental benefit of enhanced systems generally remains positive when considering the avoided impacts of nitrate discharge to receiving waters \citep{RN1181}.
+
+\subsection{Phosphorus Dynamics}
+
+\added[id=auth]{Phosphorus dynamics in enhanced bioreactor systems present both opportunities and challenges for water quality management.} While bioreactors are primarily designed for nitrate removal, phosphorus transformations can significantly influence overall system environmental impact and regulatory compliance.
+
+Enhanced systems may either increase or decrease phosphorus mobilization compared to conventional bioreactors \citep{RN370, RN291}. \added[id=rev1]{The direction and magnitude of phosphorus effects depend on complex interactions between enhancement strategy, media characteristics, redox conditions, and influent water chemistry.} Carbon supplementation systems often increase phosphorus release due to enhanced microbial activity and potential pH changes associated with organic acid production. However, this effect can be managed through careful carbon dosing and pH monitoring.
+
+Alternative media systems show highly variable phosphorus behavior depending on media composition and processing history. \added[id=rev2]{Agricultural residue-based media may initially release significant phosphorus due to decomposition of plant tissues, while processed media and engineered materials typically show minimal phosphorus mobilization.} Figure \ref{fig:phosphorus_removal} illustrates phosphorus concentration changes across different enhancement strategies.
+
+\replaced[id=auth]{Bioaugmentation approaches focusing on phosphorus-accumulating organisms can}{Some bioaugmentation strategies} potentially provide concurrent nitrate and phosphorus removal, though this remains an area of active research \citep{RN291}. The integration of phosphorus removal capabilities represents an important opportunity for enhanced system development.
+
+\subsection{Dissolved Organic Carbon (DOC) Leaching}
+
+Dissolved organic carbon leaching from enhanced bioreactor systems requires careful consideration due to potential impacts on receiving water quality and downstream treatment processes. \added[id=auth]{While some DOC release is inherent to biological treatment systems, enhanced systems may produce higher concentrations that require management strategies.} DOC in bioreactor effluent can contribute to oxygen demand, support unwanted microbial growth, and interfere with disinfection processes.
+
+\added[id=rev1]{Enhanced carbon availability in supplemented systems can lead to increased DOC concentrations, particularly during startup and following carbon addition events.} Studies report DOC concentrations ranging from 15-45 mg/L in carbon-supplemented systems compared to 8-20 mg/L in conventional bioreactors \citep{RN291}. However, these concentrations typically decrease with operating time as microbial communities mature and carbon utilization efficiency improves.
+
+Alternative media systems demonstrate variable DOC leaching characteristics depending on media type and processing \citep{RN242}. Fresh agricultural residues often produce high initial DOC concentrations that decline over several months of operation, while processed or aged materials typically show lower and more stable DOC release \citep{RN348, RN605}. Figure \ref{fig:doc_leaching} presents DOC concentration trends for different media types.
+
+\added[id=rev2]{DOC management strategies for enhanced systems include:
+
+\begin{itemize}
+\item Media preconditioning to reduce initial leaching
+\item Effluent polishing using constructed wetlands or filtration
+\item Carbon dosing optimization to minimize excess availability
+\item System design modifications to promote DOC biodegradation
+\end{itemize}}
+
+\section{Economic Analysis}
+
+\subsection{Cost-Effectiveness Assessment}
+
+\added[id=auth]{Economic analysis of enhanced bioreactor systems requires comprehensive consideration of capital costs, operational expenses, and treatment performance to enable informed decision-making.} Cost-effectiveness is typically expressed as cost per unit of nitrogen removed (\$/kg N), allowing comparison across different enhancement strategies and alternative treatment technologies.
+
+Enhanced systems demonstrate cost-effectiveness ranging from \$10.56-86/kg N removed depending on enhancement strategy, scale of implementation, and regional cost factors \citep{RN632, RN350, RN624}. \added[id=rev1]{This wide range reflects significant variation in both costs and performance across different approaches, highlighting the importance of site-specific economic analysis for optimal strategy selection.} Carbon supplementation systems typically fall in the middle of this range (\$25-45/kg N), with costs dominated by ongoing carbon procurement and dosing system maintenance.
+
+Alternative media approaches often provide the best cost-effectiveness (\$10.56-30/kg N) when suitable materials are locally available \citep{RN196, RN289}. \added[id=rev2]{The economic advantage of alternative media systems stems from both lower material costs and higher removal rates, though this advantage may diminish in regions where specialized media must be transported significant distances.} Agricultural residue-based media offer particular cost advantages in rural settings where these materials are readily available as byproducts.
+
+\replaced[id=auth]{Bioaugmentation strategies show}{Enhanced microbial approaches demonstrate} variable cost-effectiveness (\$15-60/kg N) depending on the specific approach and frequency of application \citep{RN289, RN350, RN196}. Simple nutrient addition strategies are generally more cost-effective than specialized microbial inoculation approaches.
+
+\subsection{Lifecycle Cost Analysis}
+
+\added[id=auth]{Lifecycle cost analysis provides a more comprehensive economic assessment by considering all costs over the expected system operational period, typically 15-20 years for bioreactor systems.} This analysis includes initial capital costs, periodic maintenance and media replacement, ongoing operational expenses, and end-of-life disposal or remediation costs.
+
+Capital cost premiums for enhanced systems range from 15-150\% above conventional bioreactor construction costs, depending on the enhancement strategy and system complexity \citep{RN289}. \added[id=rev1]{Carbon supplementation systems require the highest initial investment due to dosing infrastructure, monitoring equipment, and storage facilities.} Alternative media systems typically involve minimal capital cost increases if suitable materials are locally available.
+
+\added[id=rev2]{Operational cost analysis reveals that enhanced systems often achieve lower lifecycle costs despite higher initial investment due to improved performance and reduced system size requirements.} For example, a carbon-supplemented system achieving 3x higher removal rates may require only 50\% of the volume of a conventional system, resulting in significant savings in excavation, media, and land costs.
+
+\replaced[id=auth]{Maintenance costs for enhanced systems vary}{Enhanced system maintenance costs} significantly among strategies, with carbon supplementation requiring ongoing monitoring and adjustment, while alternative media systems may need more frequent media replacement \citep{RN310}. However, the improved reliability and performance consistency of enhanced systems often reduce troubleshooting and performance optimization costs.
+
+\section{Design Guidelines and Recommendations}
+
+\subsection{Strategy Selection Framework}
+
+\added[id=auth]{Systematic strategy selection requires consideration of multiple factors including treatment objectives, site constraints, economic considerations, and operational capabilities.} A structured decision framework can help identify optimal enhancement approaches for specific applications and operating conditions.
+
+\added[id=rev1]{Primary selection criteria include:
+
+\begin{itemize}
+\item Required removal rates and efficiency targets
+\item Influent nitrate concentrations and loading variability
+\item Available space and installation constraints
+\item Local material availability and costs
+\item Operational complexity tolerance
+\item Environmental regulatory requirements
+\item Long-term maintenance capabilities
+\end{itemize}}
+
+For applications requiring high removal rates (>10 g N/m$^3$/day) with relatively consistent loading, alternative media strategies often provide optimal performance and cost-effectiveness \citep{RN312, RN1023, RN258}. These systems are particularly well-suited for point source applications such as aquaculture effluent treatment where space constraints may be significant.
+
+Carbon supplementation approaches are most appropriate for applications with highly variable loading conditions where operational flexibility is essential \citep{RN289}. \added[id=rev2]{The ability to adjust carbon dosing in real-time allows these systems to maintain high performance across a wide range of influent conditions, making them suitable for agricultural drainage applications with seasonal flow variation.} However, these systems require more sophisticated operational capabilities and ongoing attention.
+
+\replaced[id=auth]{Bioaugmentation and hydraulic optimization strategies are}{Enhanced hydraulic designs are} most valuable as complementary approaches that can be combined with other enhancement strategies to maximize overall system performance \citep{RN242, RN228}. These approaches are particularly important for retrofit applications where existing infrastructure limits other enhancement options.
+
+\subsection{Performance Optimization}
+
+\added[id=auth]{Performance optimization requires ongoing attention to operational parameters, monitoring protocols, and adaptive management strategies.} Enhanced systems often provide improved performance consistency compared to conventional bioreactors, but this reliability requires appropriate design and operation.
+
+Key optimization parameters include hydraulic retention time (8-16 hours optimal for most applications), carbon-to-nitrogen ratios (1.5-3.0 for supplemented systems), and temperature management strategies for seasonal performance variation \citep{RN312}. \added[id=rev1]{Monitoring protocols should include regular assessment of influent and effluent quality, flow rates, temperature, and system-specific parameters such as carbon dosing rates or media condition.}
+
+\replaced[id=rev2]{Regular performance assessment should include evaluation of both treatment effectiveness and environmental impacts, with}{Performance monitoring should encompass} particular attention to greenhouse gas emissions, phosphorus dynamics, and DOC leaching \citep{RN629, RN310, RN312}. These parameters provide early warning of operational issues and enable proactive system management.
+
+Adaptive management strategies should be developed to address performance variations, equipment failures, and changing influent conditions. \added[id=auth]{Enhanced systems often provide more operational flexibility than conventional bioreactors, but this flexibility must be supported by appropriate monitoring and response capabilities.} Documentation of system performance and operational decisions supports continuous improvement and facilitates knowledge transfer to similar applications.
+
+\section{Future Research Directions}
+
+\added[id=auth]{Continued development of enhanced bioreactor technologies requires focused research addressing current knowledge gaps and emerging opportunities.} Priority research areas include optimization of novel enhancement strategies, development of integrated treatment systems, and advancement of monitoring and control technologies.
+
+Integration of multiple enhancement strategies represents a promising area for future investigation \citep{RN242, RN258, RN196}. \added[id=rev1]{Synergistic effects between different enhancement approaches may enable performance levels exceeding those achievable with individual strategies, while also providing operational flexibility and risk mitigation.} For example, combining alternative media with controlled carbon supplementation could provide both high baseline performance and the ability to respond to loading variations.
+
+\added[id=rev2]{Advanced monitoring and control technologies offer opportunities for improved system performance and reduced operational complexity.} Real-time sensors for nitrate, carbon, and other key parameters could enable automated optimization of enhanced systems, reducing labor requirements while improving performance consistency. Integration with remote monitoring and data analysis capabilities could support predictive maintenance and performance optimization across multiple installations.
+
+\replaced[id=auth]{Novel enhancement approaches including}{Emerging enhancement strategies such as} engineered media, advanced bioaugmentation strategies, and hybrid biological-physical treatment systems represent important research frontiers \citep{RN370, RN291}. These approaches may address current limitations of enhanced systems while opening new application opportunities.
+
+Climate change adaptation represents an increasingly important research priority, particularly for systems in regions experiencing changing precipitation patterns and temperature extremes. \added[id=auth]{Enhanced systems may provide improved resilience to climate variability, but specific design and operational strategies for climate adaptation require further investigation.} Research should focus on quantifying performance under extreme conditions and developing adaptive management protocols for changing environmental conditions.
+
+\section{Conclusions}
+
+This systematic review demonstrates that enhancement strategies can significantly improve woodchip bioreactor performance while addressing many limitations of conventional systems. \added[id=auth]{The comprehensive analysis of 70 studies reveals that enhanced systems consistently achieve 2-4 times higher nitrate removal rates compared to conventional bioreactors, with cost-effectiveness ranging from \$10.56-86/kg N removed depending on strategy and site conditions.}
+
+Alternative media approaches, particularly those utilizing agricultural residues, demonstrate the highest absolute removal rates (12.8-15.2 g N/m$^3$/day) and often provide the best cost-effectiveness when suitable materials are locally available. \added[id=rev1]{Carbon supplementation strategies offer superior operational flexibility and reduced temperature sensitivity, making them particularly valuable for applications with variable loading conditions.} Bioaugmentation and hydraulic optimization provide valuable complementary benefits that can enhance the performance of other strategies.
+
+\added[id=rev2]{Environmental considerations, including greenhouse gas emissions, phosphorus dynamics, and DOC leaching, require careful attention in enhanced system design and operation.} However, most enhancement strategies demonstrate favorable environmental profiles when properly implemented, with reduced emissions per unit of nitrate removed compared to conventional systems.
+
+\replaced[id=auth]{Successful implementation of enhanced bioreactor systems requires}{Enhanced system implementation success depends on} careful consideration of site-specific factors including treatment objectives, local material availability, operational capabilities, and economic constraints. The decision framework and design guidelines presented in this review provide a systematic approach for strategy selection and system optimization.
+
+\added[id=auth]{Future research priorities include investigation of integrated enhancement approaches, development of advanced monitoring and control systems, and climate change adaptation strategies.} Continued advancement in these areas will support broader implementation of enhanced bioreactor technologies and improved water quality protection in agricultural and urban watersheds.
+
+The findings of this review support the conclusion that enhanced woodchip bioreactor technologies represent a mature and cost-effective approach for nitrate removal that can address many of the limitations of conventional systems while providing improved performance reliability and environmental sustainability \citep{RN625, RN310}.
+
+\clearpage
+
+% Include bibliography here (would need the .bib file)
+% \bibliographystyle{plain}
+% \bibliography{lit}
+
+\end{document}
